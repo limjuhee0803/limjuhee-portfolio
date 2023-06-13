@@ -4,7 +4,6 @@
 .flow-text {
   display: flex;
   flex: 0 0 auto;
-  white-space: nowrap;
   overflow: hidden;
   transition: 0.3s;
   font-size: 1.5rem;
@@ -24,7 +23,7 @@
   display: flex;
 }
 .flow-wrap {
-  animation: textLoop 10s linear infinite;
+  animation: textLoop 10s linear infinite alternate;
 }
 .flow-wrap h3 {
   color: var(--point-color);
