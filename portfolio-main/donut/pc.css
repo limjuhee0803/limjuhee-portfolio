@@ -149,7 +149,9 @@ header .global-nav li:hover {
 }
 .culture-list li {
   padding: 40px 0;
+  font-size: 1.25rem;
 }
+
 .culture-list svg {
   fill: #ddd;
   width: 40px;
