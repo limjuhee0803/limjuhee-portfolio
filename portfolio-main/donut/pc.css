@@ -125,8 +125,8 @@ header .global-nav li:hover {
   padding-top: 40px;
 }
 .store-txt {
-  white-space: wrap;
   display: flex;
+
   flex-direction: column;
   text-align: center;
   position: relative;
