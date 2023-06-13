@@ -126,7 +126,7 @@ header .global-nav li:hover {
 }
 .store-txt {
   display: flex;
-
+  transition: 0.3s;
   flex-direction: column;
   text-align: center;
   position: relative;
@@ -147,6 +147,10 @@ header .global-nav li:hover {
 .main-store .store-list ul li img:hover {
   filter: brightness(1);
   transform: scale(1.1);
+}
+
+.main-store .store-list ul li:hover .store-txt {
+  opacity: 0;
 }
 
 .store-list {
