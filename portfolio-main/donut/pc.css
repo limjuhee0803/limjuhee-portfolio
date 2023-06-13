@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/* header */
+header .header-icon {
+  display: none;
+}
+
+header .global-nav {
+  display: flex;
+  gap: 40px;
+  line-height: 60px;
+}
+
+header .global-nav li {
+  transition: 0.3s;
+}
+header .global-nav li:hover {
+  color: var(--main-color);
+  transform: translateY(-5px);
+}
+
+/* banner */
+.banner {
+  position: relative;
+  height: 800px;
+}
+.banner .banner-in {
+  display: flex;
+}
+.banner .banner-txt h1 {
+  font-size: 1.5rem;
+}
+.banner .banner-txt {
+  gap: 10px;
+}
+
+.banner .banner-txt .banner-in-txt {
+  width: 400px;
+  margin-bottom: 2vw;
+}
+
+.banner .banner-img img {
+  min-width: 55%;
+  max-width: 700px;
+  position: absolute;
+  right: 5%;
+}
+
+/* menu */
+
+.main-menu {
+  background: url(./images/mobile-menu-background2.png);
+}
+.main-menu .menu-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 2vw;
+  margin-top: 10vw;
+}
+
+.main-menu .menu-list li {
+  width: 20vw;
+  height: 300px;
+}
+
+.main-menu .background img {
+  right: -350px;
+  top: -80px;
+  width: 400px;
+}
+.main-menu .background img:last-child {
+  width: 30vw;
+  left: 200px;
+  top: auto;
+  bottom: 0;
+}
+.main-menu .background img:last-child {
+  left: -200px;
+  top: auto;
+  bottom: 0;
+}
+
+.main-menu .menu-list li h3 {
+  font-size: 1.25rem;
+}
+.main-menu .menu-list li h3 strong {
+  font-size: 1rem;
+}
+.main-menu .menu-list li p {
+  font-size: 14px;
+}
+
+.main-menu .menu-list .buy {
+  margin: 20px auto;
+}
+
+/* main-brand */
+.main-brand .brand-box {
+  background: fixed url(./images/donut-background.png) no-repeat 50% / cover;
+}
+.main-brand .brand-box {
+  height: 400px;
+}
+.main-brand .color-layer {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 400px;
+}
+.main-brand .brand-box .brand-txt {
+  gap: 15px;
+  margin: 5vw;
+}
+
+.main-brand .brand-box .brand-txt h3 {
+  font-size: 1.4rem;
+  padding-top: 150px;
+}
+.main-brand .brand-box .brand-txt p {
+  font-size: 1rem;
+}
+
+/* main-store */
+.main-store h2 {
+  padding: 50px;
+}
+
+.main-store .store-list ul li img {
+  width: 25vw;
+  height: 350px;
+}
+.store-list {
+  margin: 100px 8%;
+}
+.store-list ul {
+  left: 0;
+}
+
+/* pop-culture */
+.culture-list {
+  font-size: 2rem;
+}
+.culture-list li {
+  padding: 40px 0;
+}
+.culture-list svg {
+  fill: #ddd;
+  width: 40px;
+  position: absolute;
+  right: 0;
+}
+
+/* footer */
+footer {
+  height: 20vw;
+}
+footer .footer-text {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 50px;
+}

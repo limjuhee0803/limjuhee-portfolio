@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/* 폰트  'Noto Sans KR' 'Rowdies' */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&family=Rowdies:wght@400;700&display=swap');
+
+/* 변수설정 */
+:root {
+  --main-font: 'Noto Sans KR', Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo',
+    'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', sans-serif;
+  --en-font: 'Rowdies', Arial, Helvetica, sans-serif;
+  --main-color: #222;
+  --gray-color: #2f2f2f;
+  --point-color: #ff4e00;
+}
+
+/* 스크롤바 */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ecf8f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--point-color);
+  border-radius: 10px;
+}
+
+html {
+  /* 부드러운 스크롤 */
+  scroll-behavior: smooth;
+}
+
+/* body */
+body {
+  font-family: var(--main-font);
+}
+
+/* view more */
+
+.view-btn {
+  width: 145px;
+  height: 35px;
+  background-color: #fff;
+  color: var(--point-color);
+  text-align: center;
+  font-weight: 700;
+  line-height: 35px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.view-btn:hover {
+  transform: scale(1.1);
+  border-radius: 0;
+}
+
+/* h2 소제목 */
+h2 {
+  font-family: var(--en-font);
+  font-size: 1.6rem;
+  position: relative;
+  margin-top: 50px;
+}
+h2::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: var(--point-color);
+  position: absolute;
+  bottom: -2vw;
+  left: 0;
+}
+
+/* more-btn */
+.more-btn {
+  color: var(--point-color);
+  text-align: center;
+  margin-top: 100px;
+  font-weight: 700;
+  position: relative;
+  transition: 0.3s;
+}
+.more-btn::after {
+  content: '';
+  background-color: var(--point-color);
+  width: 2px;
+  height: 20px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.more-btn:hover {
+  color: var(--main-color);
+}
+
+/* 컨텐츠 마진 */
+.margin {
+  margin: 0 8%;
+}
