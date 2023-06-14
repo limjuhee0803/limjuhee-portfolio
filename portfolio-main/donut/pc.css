@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+/* main-menu */
+
+.main-menu .menu-list li {
+  width: 18vw;
+}
 /* footer */
 footer .footer-text {
   gap: 15vw;
