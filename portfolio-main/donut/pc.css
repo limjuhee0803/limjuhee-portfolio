@@ -162,11 +162,16 @@ header .global-nav li:hover {
 }
 
 /* pop-culture */
+.main-culture h2 {
+  margin-bottom: 20px;
+}
 .culture-list {
   font-size: 2rem;
+  padding-top: 40px;
 }
 .culture-list li {
   font-size: 1.25rem;
+  text-indent: 20px;
 }
 
 .culture-list svg {
