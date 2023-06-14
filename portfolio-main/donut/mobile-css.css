@@ -165,7 +165,7 @@ header .menu-icon svg {
   padding-top: 60px;
 }
 .main-brand .brand-box .brand-txt p {
-  font-size: 14px;
+  font-size: 12px;
   width: 90%;
 }
 
@@ -250,8 +250,10 @@ footer img {
   object-fit: cover;
 }
 footer h3 {
-  font-size: 1.25rem;
   font-weight: 700;
+}
+footer p {
+  font-size: 0.8rem;
 }
 footer #center {
   text-align: center;
