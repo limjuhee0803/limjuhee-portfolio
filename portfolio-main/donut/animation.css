@@ -50,7 +50,7 @@
 /* banner-donuts */
 @keyframes mov1 {
   0% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
   100% {
     transform: translateY(10px);
