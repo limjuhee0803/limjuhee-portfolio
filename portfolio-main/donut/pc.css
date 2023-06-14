@@ -182,13 +182,20 @@ footer {
 footer .footer-text {
   margin-top: 20px;
   display: flex;
-  gap: 20vw;
+  gap: 15vw;
   flex-direction: row;
   justify-content: center;
   margin-left: 50px;
 }
 
+footer p {
+  font-size: 1rem;
+}
+
 footer #center {
-  margin-bottom: 10px;
   font-size: 1em;
+  padding-top: 20px;
+}
+footer svg {
+  width: 40px;
 }

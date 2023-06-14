@@ -233,7 +233,7 @@ footer {
   background-color: var(--point-color);
   color: #fff;
   width: 100%;
-  height: 300px;
+  height: 350px;
 }
 footer .footer-text {
   margin-top: 30px;
@@ -254,9 +254,16 @@ footer h3 {
 }
 footer p {
   font-size: 0.8rem;
+  margin-top: 5px;
 }
 footer #center {
   text-align: center;
   margin-top: 20px;
   font-size: 0.6rem;
+}
+
+footer svg {
+  fill: #fff;
+  width: 30px;
+  margin-right: 2px;
 }
