@@ -44,6 +44,7 @@ header .global-nav li:hover {
   max-width: 650px;
   position: absolute;
   right: 5%;
+  bottom: 10px;
 }
 
 /* menu */
