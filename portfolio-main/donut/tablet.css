@@ -187,12 +187,11 @@ footer {
   padding-bottom: 250px;
 }
 footer .footer-text {
-  margin-top: 20px;
+  margin: 20px auto;
   display: flex;
   gap: 5vw;
   flex-direction: row;
   justify-content: center;
-  margin-left: 50px;
 }
 
 footer p {
