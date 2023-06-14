@@ -46,7 +46,7 @@ header .menu-icon svg {
 .banner {
   width: 100%;
   height: 600px;
-  background: url(./images/banner-background.png) no-repeat 30% 50% / cover;
+  background: url(./images/banner-backgroun.png) no-repeat 30% 50% / cover;
 }
 .banner .banner-in {
   margin: 0 8%;
