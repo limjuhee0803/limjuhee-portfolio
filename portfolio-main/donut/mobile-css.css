@@ -240,6 +240,7 @@ footer .footer-text {
   flex-direction: column;
   justify-content: center;
   margin-left: 50px;
+  transition: 0.3s;
 }
 footer img {
   margin-left: 50px;
