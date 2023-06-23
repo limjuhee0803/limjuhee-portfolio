@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* 스크롤바 */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ecf8f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--point-color);
+  border-radius: 10px;
+}
+
+html {
+  /* 부드러운 스크롤 */
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-font: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR',
+    'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    sans-serif;
+  --en-font: 'Libre Baskerville', Arial, Helvetica, sans-serif;
+  --point-color: #0d1f3d;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+/* 소제목 */
+h3 {
+  font-weight: 700;
+  font-size: 3rem;
+  position: relative;
+  margin-left: 3rem;
+  padding-top: 80px;
+}
+h3:after {
+  content: '';
+  width: 20vw;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  border: 2px solid var(--point-color);
+}

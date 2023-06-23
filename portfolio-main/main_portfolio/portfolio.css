@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/* Libre Baskerville */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
+
+/**** header ****/
+header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+  z-index: 9999;
+}
+
+header .gnb {
+  margin: 0 3rem;
+  display: flex;
+  justify-content: right;
+  gap: 10%;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+header .gnb span {
+  margin-left: 10px;
+}
+/**** main 화면 ****/
+.main {
+  width: 100%;
+  height: 100vh;
+  background: url(./images1/main_banner_img.png) no-repeat 50% 50% / cover;
+  position: relative;
+}
+.main img {
+  width: 55vw;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+#tape1 {
+  width: 20vw;
+  position: absolute;
+  bottom: -60px;
+  right: -100px;
+}
+/**** work 화면 ****/
+
+/* web design */
+.work {
+  width: 100%;
+  background: url(./images1/background_pattern.png) 50% / contain;
+}
+.work h4,
+.work h5 {
+  font-family: var(--en-font);
+  text-align: right;
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: -1px 0px var(--point-color), 0px 1px var(--point-color),
+    1px 0px var(--point-color), 0px -1px var(--point-color);
+}
+.work h5 {
+  color: var(--point-color);
+  text-shadow: none;
+}
+.work .web_design {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.work .web_design h4,
+.work .web_design h5 {
+  position: relative;
+  top: -70px;
+}
+.work .web_design .project1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.work .web_design .project1 .project1_list {
+  text-transform: capitalize;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  font-family: var(--en-font);
+  font-size: 1.875rem;
+  margin-left: 3.5rem;
+}
+.work .web_design .project1 .project_img {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+/* ui/ux design */
+.work .ux_design h4,
+.work .ux_design h5 {
+  text-align: left;
+}
+
+.work .ux_design {
+  width: 100%;
+  height: 100vh;
+}
+
+/* 3d design */
+.work .product_design {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.work .product_design h4 strong {
+  color: var(--point-color);
+  text-shadow: none;
+}
+.work .product_design .product_img {
+  transform: translateX(-50% 50%);
+  display: flex;
+  gap: 5%;
+}
+.work .product_design img {
+  width: 25vw;
+}
+
+/**** about me ****/
+.about_me .skills .skill_list {
+  width: 100%;
+  height: 100vh;
+  background-color: #ddd;
+}
+
+.about_me .skills .tool_list img {
+  width: 30px;
+}
+
+/* moving text */
+.moving_txt {
+  font-family: var(--en-font);
+  text-transform: capitalize;
+  font-size: 3rem;
+  word-spacing: 5vw;
+}
+/**** contact ****/
+
+/* back to top */
+.back_top img {
+  width: 100px;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
