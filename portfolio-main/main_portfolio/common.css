@@ -38,6 +38,7 @@ h3 {
   position: relative;
   margin-left: 3rem;
   padding-top: 80px;
+  color: var(--point-color);
 }
 h3:after {
   content: '';
@@ -46,4 +47,27 @@ h3:after {
   bottom: -10px;
   left: 0;
   border: 2px solid var(--point-color);
+}
+
+/* contents */
+.contents {
+  background: url(./images1/background_pattern.png) 50% / contain;
+}
+
+/* 소제목 */
+.work {
+  width: 100%;
+}
+.work h4,
+.work h5 {
+  font-family: var(--en-font);
+  text-align: right;
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: -1px 0px var(--point-color), 0px 1px var(--point-color),
+    1px 0px var(--point-color), 0px -1px var(--point-color);
+}
+.work h5 {
+  color: var(--point-color);
+  text-shadow: none;
 }

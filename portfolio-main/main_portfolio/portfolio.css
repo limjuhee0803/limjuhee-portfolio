@@ -53,55 +53,49 @@ header .gnb span {
 /**** work 화면 ****/
 
 /* web design */
-.work {
-  width: 100%;
-  background: url(./images1/background_pattern.png) 50% / contain;
-}
-.work h4,
-.work h5 {
-  font-family: var(--en-font);
-  text-align: right;
-  font-size: 5rem;
-  color: #fff;
-  text-shadow: -1px 0px var(--point-color), 0px 1px var(--point-color),
-    1px 0px var(--point-color), 0px -1px var(--point-color);
-}
-.work h5 {
-  color: var(--point-color);
-  text-shadow: none;
-}
-.work .web_design {
-  width: 100%;
+.web_design {
   height: 100vh;
-  position: relative;
-}
-.work .web_design h4,
-.work .web_design h5 {
-  position: relative;
-  top: -70px;
-}
-.work .web_design .project1 {
-  display: flex;
-  align-items: center;
   width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
-.work .web_design .project1 .project1_list {
-  text-transform: capitalize;
+.web_design .project1 {
+  width: 100%;
   display: flex;
-  gap: 30px;
-  flex-direction: column;
-  font-family: var(--en-font);
-  font-size: 1.875rem;
-  margin-left: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
 }
-.work .web_design .project1 .project_img {
-  width: 70vw;
-  margin: 0 auto;
+.web_design .poject1_list {
+  font-family: var(--en-font);
+  font-size: 2rem;
+  color: var(--point-color);
+  margin: 10px 0;
+}
+
+.web_design .poject1_list p {
+  width: 225px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+.web_design .poject1_list p:nth-child(1) {
+  background: url(./images1/tape.png) no-repeat 50% / cover;
+}
+.right_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right_img .thumb_img00 {
+  width: 200px;
+  margin-top: 20px;
+}
+
+.right_img .avtive_line {
+  border: 3px solid var(--point-color);
+  text-indent: -9999px;
+  width: 220px;
+  height: 140px;
+  position: absolute;
 }
 
 /* ui/ux design */
@@ -119,41 +113,202 @@ header .gnb span {
 .work .product_design {
   overflow: hidden;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
+}
+.work .product_design h4 {
+  text-align: center;
 }
 .work .product_design h4 strong {
   color: var(--point-color);
   text-shadow: none;
 }
+
 .work .product_design .product_img {
-  transform: translateX(-50% 50%);
+  margin-top: 100px;
   display: flex;
-  gap: 5%;
+  justify-content: center;
+  gap: 2%;
 }
 .work .product_design img {
-  width: 25vw;
+  width: 20vw;
+  cursor: pointer;
 }
 
+.product_design p {
+  text-align: center;
+  color: var(--point-color);
+  font-size: 1.2rem;
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  margin: 50px auto;
+  background: url(./images1/tape.png) no-repeat 50% / cover;
+  transition: 0.3s;
+}
+
+.product_design p:hover {
+  font-weight: bold;
+}
 /**** about me ****/
-.about_me .skills .skill_list {
+.about_me .skills .skills_main {
   width: 100%;
   height: 100vh;
-  background-color: #ddd;
 }
-
+.about_me .skills .tool_list {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  justify-content: end;
+}
 .about_me .skills .tool_list img {
-  width: 30px;
+  width: 35px;
+  height: 35px;
+  transition: 0.3s;
 }
 
+.skill_list {
+  width: 80%;
+  height: 700px;
+  margin: 100px auto;
+  margin-bottom: 0;
+  background: url(./images1/blue_paper.png);
+  color: #fff;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 2fr;
+
+  position: relative;
+}
+.skill_list img:nth-child(1) {
+  position: absolute;
+  top: -40px;
+  width: 80px;
+}
+.skill_list img:last-child {
+  position: absolute;
+  bottom: -60px;
+  left: -100px;
+  width: 300px;
+}
+.skill_list #list_txt {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.skill_list .detail_skills li {
+  margin-top: 10px;
+  list-style: disc;
+}
 /* moving text */
 .moving_txt {
   font-family: var(--en-font);
   text-transform: capitalize;
   font-size: 3rem;
   word-spacing: 5vw;
+  margin-top: 100px;
+}
+
+/* profile */
+
+.pofile {
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.pofile .profile_txt h1 {
+  font-size: 3rem;
+  color: var(--point-color);
+  font-weight: 300;
+  line-height: 1.5;
+}
+.pofile .profile_txt strong {
+  background: url(./images1/tape.png) no-repeat 50% / cover;
+}
+.pofile .profile_txt em {
+  font-style: normal;
+  font-weight: bold;
+}
+.pofile .profile_txt .detail_profile_text {
+  margin-top: 30px;
+}
+.pofile .profile_txt .detail_profile_text h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-top: 20px;
+}
+.pofile img {
+  width: 25vw;
+  object-fit: contain;
 }
 /**** contact ****/
+.contact {
+  margin-top: 100px;
+  height: 100vh;
+  background: url(./images1/contact_background.png) 50% / contain;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.contact .contact_title {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+}
+.contact .contact_title h1 {
+  padding-top: 100px;
+  font-size: 5rem;
+  font-family: var(--en-font);
+}
 
+.contact h2 {
+  font-size: 2.4rem;
+  margin: 30px auto;
+}
+.contact h4 {
+  width: 35%;
+  margin: 0 auto;
+  word-break: keep-all;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.contact .contact_list {
+  display: flex;
+  gap: 15%;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 50px 0;
+}
+.contact .contact_list li {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  line-height: 300px;
+  color: #272727;
+  font-weight: 700;
+  font-family: var(--en-font);
+  background: url(./images1/contact_paper.png) no-repeat 50% / cover;
+  transition: 0.3s;
+}
+.contact .contact_list li:hover {
+  transform: translateY(-20px);
+  font-size: 2.5rem;
+  box-shadow: 0px 5px 20px #000000;
+}
+.contact h5 {
+  font-size: 1.6rem;
+}
+.contact p {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 /* back to top */
 .back_top img {
   width: 100px;
