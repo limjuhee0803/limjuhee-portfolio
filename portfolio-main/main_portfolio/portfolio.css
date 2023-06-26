@@ -18,9 +18,10 @@ header .gnb {
   margin: 0 3rem;
   display: flex;
   justify-content: right;
-  gap: 10%;
+  gap: 5%;
   font-size: 1.25rem;
   font-weight: 500;
+  color: #fff;
 }
 
 header .gnb span {
@@ -51,7 +52,9 @@ header .gnb span {
   right: -100px;
 }
 /**** work 화면 ****/
-
+.work h3::after {
+  width: 280px;
+}
 /* web design */
 .web_design {
   height: 100vh;
@@ -62,17 +65,21 @@ header .gnb span {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5%;
+  gap: 3%;
 }
 .web_design .poject1_list {
   font-family: var(--en-font);
   font-size: 2rem;
   color: var(--point-color);
   margin: 10px 0;
+  text-transform: capitalize;
+  /* width: 15%; */
+}
+.web_design .center_img {
+  width: 50vw;
 }
 
 .web_design .poject1_list p {
-  width: 225px;
   height: 70px;
   line-height: 70px;
   text-align: center;
@@ -80,7 +87,8 @@ header .gnb span {
 .web_design .poject1_list p:nth-child(1) {
   background: url(./images1/tape.png) no-repeat 50% / cover;
 }
-.right_img {
+
+.web_desig .right_img {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,7 +149,7 @@ header .gnb span {
   width: 250px;
   height: 60px;
   line-height: 60px;
-  margin: 50px auto;
+  margin: 100px auto;
   background: url(./images1/tape.png) no-repeat 50% / cover;
   transition: 0.3s;
 }
@@ -150,6 +158,23 @@ header .gnb span {
   font-weight: bold;
 }
 /**** about me ****/
+.about_me {
+  position: relative;
+  overflow: hidden;
+}
+
+.about_me #paper_tape {
+  position: absolute;
+  right: -120px;
+  top: 150px;
+  width: 30vw;
+  z-index: 20;
+  transition: 0.5s;
+}
+.about_me #paper_tape:hover {
+  right: -280px;
+}
+
 .about_me .skills .skills_main {
   width: 100%;
   height: 100vh;
@@ -164,9 +189,9 @@ header .gnb span {
 .about_me .skills .tool_list img {
   width: 35px;
   height: 35px;
-  transition: 0.3s;
 }
 
+/* skill */
 .skill_list {
   width: 80%;
   height: 700px;
@@ -182,16 +207,19 @@ header .gnb span {
 
   position: relative;
 }
-.skill_list img:nth-child(1) {
+
+
+.skills_main img:nth-child(1) {
   position: absolute;
-  top: -40px;
-  width: 80px;
+  top: -60px;
+  width: 100px;
 }
+
 .skill_list img:last-child {
   position: absolute;
   bottom: -60px;
   left: -100px;
-  width: 300px;
+  width:300px;
 }
 .skill_list #list_txt {
   font-size: 1.8rem;
@@ -220,6 +248,7 @@ header .gnb span {
   align-items: center;
   height: 80vh;
 }
+
 .pofile .profile_txt h1 {
   font-size: 3rem;
   color: var(--point-color);
@@ -236,18 +265,22 @@ header .gnb span {
 .pofile .profile_txt .detail_profile_text {
   margin-top: 30px;
 }
-.pofile .profile_txt .detail_profile_text h2 {
+.pofile .profile_txt h2 {
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 700;
   padding-top: 20px;
 }
 .pofile img {
   width: 25vw;
   object-fit: contain;
 }
+
+.pofile .profile_txt2 {
+  display: flex;
+}
+
 /**** contact ****/
 .contact {
-  margin-top: 100px;
   height: 100vh;
   background: url(./images1/contact_background.png) 50% / contain;
   color: #fff;
@@ -260,37 +293,42 @@ header .gnb span {
   margin: 0 auto;
 }
 .contact .contact_title h1 {
-  padding-top: 100px;
+  padding-top: 150px;
   font-size: 5rem;
   font-family: var(--en-font);
+  border-bottom: 1px solid #fff;
 }
 
 .contact h2 {
-  font-size: 2.4rem;
-  margin: 30px auto;
+  font-size: 2rem;
+  margin: 20px auto;
+  padding-top: 50px;
 }
 .contact h4 {
   width: 35%;
   margin: 0 auto;
   word-break: keep-all;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.6;
+  font-weight: 200;
 }
 .contact .contact_list {
   display: flex;
-  gap: 15%;
+  gap: 8%;
   justify-content: center;
   font-size: 2rem;
   margin: 50px 0;
 }
 .contact .contact_list li {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  line-height: 300px;
+  line-height: 250px;
   color: #272727;
   font-weight: 700;
+  text-transform: capitalize;
   font-family: var(--en-font);
+
   background: url(./images1/contact_paper.png) no-repeat 50% / cover;
   transition: 0.3s;
 }
@@ -300,15 +338,18 @@ header .gnb span {
   box-shadow: 0px 5px 20px #000000;
 }
 .contact h5 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  padding-top: 40px;
 }
 .contact p {
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   left: 0;
   right: 0;
   margin: auto;
 }
+
+
 /* back to top */
 .back_top img {
   width: 100px;
