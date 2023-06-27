@@ -175,23 +175,51 @@ header .gnb span {
   right: -280px;
 }
 
-.about_me .skills .skills_main {
+/* skill */
+.skills .skill_box {
   width: 100%;
   height: 100vh;
+  background-color: #ddd;
 }
-.about_me .skills .tool_list {
+.skills .tool_list {
   margin-top: 20px;
   display: flex;
   gap: 10px;
   width: 90%;
   justify-content: end;
 }
-.about_me .skills .tool_list img {
+.skills .tool_list img {
   width: 35px;
   height: 35px;
 }
 
-/* skill */
+.skills .skill_box {
+  width: 80%;
+  height: 700px;
+  margin: 100px auto;
+  color: #fff;
+  background: url(./images1/blue_paper.png);
+
+  position: relative;
+}
+
+.skills .skill_box img:nth-child(1) {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+}
+
+.skills .skill_box img:last-child {
+  position: absolute;
+  bottom: -60px;
+  left: -100px;
+  width: 300px;
+}
+
+/* 
 .skill_list {
   width: 80%;
   height: 700px;
@@ -208,8 +236,7 @@ header .gnb span {
   position: relative;
 }
 
-
-.skills_main img:nth-child(1) {
+.skill_box img:nth-child(1) {
   position: absolute;
   top: -60px;
   width: 100px;
@@ -219,7 +246,7 @@ header .gnb span {
   position: absolute;
   bottom: -60px;
   left: -100px;
-  width:300px;
+  width: 300px;
 }
 .skill_list #list_txt {
   font-size: 1.8rem;
@@ -229,7 +256,8 @@ header .gnb span {
 .skill_list .detail_skills li {
   margin-top: 10px;
   list-style: disc;
-}
+} */
+
 /* moving text */
 .moving_txt {
   font-family: var(--en-font);
@@ -348,7 +376,6 @@ header .gnb span {
   right: 0;
   margin: auto;
 }
-
 
 /* back to top */
 .back_top img {
