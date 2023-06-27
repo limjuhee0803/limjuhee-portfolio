@@ -101,7 +101,7 @@ header .gnb span {
 .right_img .avtive_line {
   border: 3px solid var(--point-color);
   text-indent: -9999px;
-  width: 220px;
+  width: 200px;
   height: 140px;
   position: absolute;
 }
@@ -115,6 +115,59 @@ header .gnb span {
 .work .ux_design {
   width: 100%;
   height: 100vh;
+  overflow: hidden;
+}
+
+.work .ux_design .project2 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+.work .ux_design .project2_gnb {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.work .ux_design .project2_gnb li {
+  width: 15px;
+  height: 15px;
+  background-color: #272727;
+  border-radius: 50%;
+  text-indent: -9999px;
+}
+.work .ux_design .project2 img:nth-child(1),
+.work .ux_design .project2 img:nth-child(3) {
+  transform: scale(0.8);
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 60%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* 3d design */
@@ -134,7 +187,7 @@ header .gnb span {
 .work .product_design .product_img {
   margin-top: 100px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 2%;
 }
 .work .product_design img {
@@ -182,11 +235,11 @@ header .gnb span {
   background-color: #ddd;
 }
 .skills .tool_list {
-  margin-top: 20px;
   display: flex;
   gap: 10px;
   width: 90%;
   justify-content: end;
+  margin-top: 20px;
 }
 .skills .tool_list img {
   width: 35px;
@@ -195,8 +248,9 @@ header .gnb span {
 
 .skills .skill_box {
   width: 80%;
-  height: 700px;
+  height: 800px;
   margin: 100px auto;
+  margin-bottom: 0;
   color: #fff;
   background: url(./images1/blue_paper.png);
 
@@ -218,45 +272,32 @@ header .gnb span {
   left: -100px;
   width: 300px;
 }
-
-/* 
-.skill_list {
+.skills .skill_box .skill_list_txt {
   width: 80%;
-  height: 700px;
-  margin: 100px auto;
-  margin-bottom: 0;
-  background: url(./images1/blue_paper.png);
-  color: #fff;
-
-  display: grid;
-  justify-items: center;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skills .skill_box .skill_list_txt h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.skills .skill_box .skill_list_txt .graphic,
+.skills .skill_box .skill_list_txt .html,
+.skills .skill_box .skill_list_txt .java,
+.skills .skill_box .skill_list_txt .git {
+  display: flex;
   align-items: center;
-  grid-template-columns: 1fr 2fr;
-
-  position: relative;
+  justify-content: space-between;
+  border-bottom: 2px solid #fff;
+  height: 20%;
 }
-
-.skill_box img:nth-child(1) {
-  position: absolute;
-  top: -60px;
-  width: 100px;
-}
-
-.skill_list img:last-child {
-  position: absolute;
-  bottom: -60px;
-  left: -100px;
-  width: 300px;
-}
-.skill_list #list_txt {
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-
-.skill_list .detail_skills li {
-  margin-top: 10px;
+.skills .skill_box .skill_list_txt .detail_skills li {
   list-style: disc;
-} */
+  padding: 5px 0;
+}
 
 /* moving text */
 .moving_txt {
@@ -268,7 +309,6 @@ header .gnb span {
 }
 
 /* profile */
-
 .pofile {
   display: flex;
   gap: 10%;
@@ -282,6 +322,11 @@ header .gnb span {
   color: var(--point-color);
   font-weight: 300;
   line-height: 1.5;
+  transition: 0.3s;
+}
+.pofile .profile_txt h1:hover {
+  transform-origin: top left;
+  transform: translateY(-20px) scale(1.1);
 }
 .pofile .profile_txt strong {
   background: url(./images1/tape.png) no-repeat 50% / cover;
@@ -301,12 +346,27 @@ header .gnb span {
 .pofile img {
   width: 25vw;
   object-fit: contain;
+  transition: 0.3s;
 }
-
+.pofile img:hover {
+  transform: rotate(-10deg);
+}
 .pofile .profile_txt2 {
   display: flex;
 }
+.pofile .profile_txt2 .experience {
+  margin-left: 50px;
+}
 
+.pofile .profile_txt2 .experience li {
+  padding: 10px 0;
+  margin-left: 30px;
+  list-style: disc;
+}
+
+.pofile .profile_txt2 .experience li::marker {
+  color: var(--point-color);
+}
 /**** contact ****/
 .contact {
   height: 100vh;

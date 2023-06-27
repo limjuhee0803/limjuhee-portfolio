@@ -54,7 +54,7 @@ h3:after {
   background: url(./images1/background_pattern.png) 50% / contain;
 }
 
-/* 소제목 */
+/* 소제목2 */
 .work {
   width: 100%;
 }
@@ -66,8 +66,18 @@ h3:after {
   color: #fff;
   text-shadow: -1px 0px var(--point-color), 0px 1px var(--point-color),
     1px 0px var(--point-color), 0px -1px var(--point-color);
+  transition: 0.3s;
 }
 .work h5 {
   color: var(--point-color);
   text-shadow: none;
+}
+
+.work h4:hover {
+  transform: translateY(-10px);
+}
+
+.work h4:hover {
+  text-shadow: none;
+  color: var(--point-color);
 }

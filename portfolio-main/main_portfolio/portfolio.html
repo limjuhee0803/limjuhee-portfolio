@@ -30,8 +30,8 @@
     <!-- header -->
     <header>
         <menu class="gnb">
-            <li>01 <span>WORKS</span></li>
-            <li>02 <span>ABOUT ME</span></li>
+            <li><a href="#work">01 <span>WORKS</span></li></a>
+            <li><a href="#about">02 <span>ABOUT ME</span></li></a>
         </menu>
     </header>
 
@@ -46,7 +46,7 @@
     <!-- contents -->
     <div class="contents">
         <!-- work화면 -->
-        <div class="work">
+        <div class="work" id="work">
             <h3>WORKS</h3>
 
             <!-- web design -->
@@ -102,8 +102,17 @@
                 <h5>DESIGN</h5>
 
                 <div class="project2">
+                    <img src="./images1/ux_design2.png" alt="ux_design2">
+                    <img src="./images1/ux_design1.png" alt="ux_design1">
+                    <img src="./images1/ux_design3.png" alt="ux_design3">
 
                 </div>
+                
+                <ul class="project2_gnb">
+                    <li>project1</li>
+                    <li>project2</li>
+                    <li>project3</li>
+                </ul>
             </div>
 
             <!-- 3d modeling -->
@@ -121,10 +130,11 @@
                 </div>
                 <p><a href="#">View More</a></p>
             </div>
+            
         </div>
 
         <!-- about me -->
-        <div class="about_me">
+        <div class="about_me" id="about">
             <h3>ABOUT ME</h3>
             <img src="./images1/paper_tape.png" alt="paper tape image" id="paper_tape">
             <!-- skills -->
@@ -132,8 +142,8 @@
                 <div class="skill_box">
                     <img src="./images1/whit_paper.png" alt="white paper image">
 
-                    <menu class="list_txt">
-                        <li>Graphic
+                    <!-- <menu class="skill_list_txt">
+                        <li><span>Graphic</span>
                             <ul class="detail_skills">
                                 <li>Photoshop, Figma, Illustrator를 이용한 UI/UX 프로토타입 제작</li>
                                 <li>Photoshop, Figma, Illustrator를 이용한 이미지 콘텐츠 제작 및 편집</li>
@@ -142,7 +152,7 @@
                             </ul>
                         </li>
 
-                        <li>HTML5 & CSS3
+                        <li><span>HTML5 & CSS3</span>
                             <ul class="detail_skills">
                                 <li>웹사이트 구축 및 디자인</li>
                                 <li>미디어 쿼리를 활용한 반응형 웹 제작</li>
@@ -151,7 +161,7 @@
                             </ul>
                         </li>
 
-                        <li>JavaScript & jQuery
+                        <li><span>JavaScript & jQuery</span>
                             <ul class="detail_skills">
                                 <li>자바스크립트 ES6+ 문법 이해</li>
                                 <li>Map과 ForEach를 활용해 반복되는 코드 단축</li>
@@ -159,14 +169,57 @@
                             </ul>
                         </li>
 
-                        <li>Git & Github
+                        <li><span>JavaScript & jQuery</span>
                             <ul class="detail_skills">
                                 <li>Git Bash로 git 파일 백업 및 버전 관리, GitHub와 연동</li>
                                 <li>GitHub 프로젝트 버전 관리, 백업, 복구 로컬 폴더 연동</li>
                                 <li>GitHub Origaniaztions을 통한 git 팀 프로젝트 경험</li>
                             </ul>
                         </li>
-                    </menu>
+                    </menu> -->
+
+                    <div class="skill_list_txt">
+                        <article class="graphic">
+                            <h1>#Graphic</h1>
+
+                            <ul class="detail_skills">
+                                <li>Photoshop, Figma, Illustrator를 이용한 UI/UX 프로토타입 제작</li>
+                                <li>Photoshop, Figma, Illustrator를 이용한 이미지 콘텐츠 제작 및 편집</li>
+                                <li>Rhino, Keyshot을 이용한 3d 모델링 작업</li>
+                                <li>Rhiono, AutoCad를 이용한 2d 도면 작업</li>
+                            </ul>
+                        </article>
+
+                        <article class="html">
+                            <h1># HTML5 & CSS3</h1>
+
+                            <ul class="detail_skills">
+                                <li>Photoshop, Figma, Illustrator를 이용한 UI/UX 프로토타입 제작</li>
+                                <li>Photoshop, Figma, Illustrator를 이용한 이미지 콘텐츠 제작 및 편집</li>
+                                <li>Rhino, Keyshot을 이용한 3d 모델링 작업</li>
+                                <li>Rhiono, AutoCad를 이용한 2d 도면 작업</li>
+                            </ul>
+                        </article>
+
+                        <article class="java">
+                            <h1># JavaScript & jQuery</h1>
+
+                            <ul class="detail_skills">
+                                <li>자바스크립트 ES6+ 문법 이해</li>
+                                <li>Map과 ForEach를 활용해 반복되는 코드 단축</li>
+                                <li>Filter, Find, indexOf 배열 메서드를 활용해 데이터 검색 함수 작성</li>
+                            </ul>
+                        </article>
+
+                        <article class="git">
+                            <h1># Git & Github</h1>
+                            <ul class="detail_skills">
+                                <li>Git Bash로 git 파일 백업 및 버전 관리, GitHub와 연동</li>
+                                <li>GitHub 프로젝트 버전 관리, 백업, 복구 로컬 폴더 연동</li>
+                                <li>GitHub Origaniaztions을 통한 git 팀 프로젝트 경험</li>
+                            </ul>
+                        </article>
+                    </div>
 
                     <img src="./images1/tape2.png" alt="blue masking tape image">
                 </div>
@@ -250,8 +303,8 @@
                 <h4>흔히 ‘예민함’이란 부정적인 의미로 쓰입니다. 하지만 저에게 있어서 ‘예민함'이란, 사람들이 느낄 감정에 예민하게 공감하며 불편함 점들을 빠르게 캐치합니다. 또한 섬세한 작업을 돕는 저만의 강점입니다. </h4>
     
                 <ul class="contact_list">
-                    <li><a href="#">email</a></li>
-                    <li><a href="#">github</a></li>
+                    <li><a href="mailto:limjuhee0803@naver.com" target="_blank">email</a></li>
+                    <li><a href="https://github.com/limjuhee0803?tab=repositories" target="_blank">github</a></li>
                     <li><a href="#">blog</a></li>
                 </ul>
     
@@ -265,5 +318,7 @@
     <div class="back_top">
         <a href="#"><img src="./images1/daisy_top.png" alt="데이지 이미지 주위를 텍스트가 감싸고 있음"></a>
     </div>
+
+
 </body>
 </html>
