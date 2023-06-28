@@ -34,8 +34,9 @@ header .gnb span {
   background: url(./images1/main_banner_img.png) no-repeat 50% 50% / cover;
   position: relative;
 }
+
 .main img {
-  width: 55vw;
+  width: 50vw;
   margin: 0 auto;
   position: absolute;
   top: 0;
@@ -209,6 +210,7 @@ header .gnb span {
 
 .product_design p:hover {
   font-weight: bold;
+  transform: scale(1.1);
 }
 /**** about me ****/
 .about_me {
