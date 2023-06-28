@@ -175,10 +175,10 @@ header .gnb span {
 .work .menu_product {
   overflow: hidden;
   width: 100%;
-  height: 80vh;
+  height: 95vh;
 }
-.work .menu_product .menu--wrapper .menu--item {
-  margin-top: 100px;
+.work .menu_product .menu--wrapper {
+  margin-top: -180px;
 }
 .work .menu_product h4 {
   text-align: center;
@@ -190,7 +190,7 @@ header .gnb span {
   font-size: 2rem;
   color: var(--point-color);
   text-align: center;
-  margin-top: 80px;
+  margin-top: 50px;
 
   position: relative;
 }
@@ -207,7 +207,8 @@ header .gnb span {
   width: 250px;
   height: 60px;
   line-height: 60px;
-  margin: 20px auto;
+  margin: -130px auto;
+  margin-bottom: 100px;
   background: url(./images1/tape.png) no-repeat 50% / cover;
   transition: 0.3s;
 }
