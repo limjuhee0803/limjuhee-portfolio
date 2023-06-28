@@ -200,11 +200,7 @@ header .gnb span {
   text-shadow: none;
 }
 
-.menu_product p {
-  text-align: center;
-}
-
-.contents p {
+.contents #view_more {
   text-align: center;
   color: var(--point-color);
   font-size: 1.2rem;
@@ -216,7 +212,7 @@ header .gnb span {
   transition: 0.3s;
 }
 
-.contents p:hover {
+.contents #view_more:hover {
   font-weight: bold;
   transform: scale(1.1);
 }
