@@ -211,7 +211,7 @@ header .gnb span {
   width: 250px;
   height: 60px;
   line-height: 60px;
-  margin: 30px auto;
+  margin: 20px auto;
   background: url(./images1/tape.png) no-repeat 50% / cover;
   transition: 0.3s;
 }
