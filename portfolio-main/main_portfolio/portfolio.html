@@ -5,6 +5,7 @@
     <meta name="viewport" , content="width=device-width" , initial-scale="1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>portfolio</title>
+
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
@@ -23,12 +24,17 @@
     <link rel="stylesheet" href="./fonts.css">
 
     <!-- jQuery -->
+
     <script src="../../common/jquery-3.7.0.min.js"></script>
-    <!-- common --> 
+    <!-- animation --> 
+
     <link rel="stylesheet" href="./animation.css">
+
     <!-- common -->
     <link rel="stylesheet" href="./common.css">
 
+    <!-- css-product -->
+    <link rel="stylesheet" href="./style.css">
     <!-- css-pc -->
     <link rel="stylesheet" href="./portfolio.css">
 </head>
@@ -122,21 +128,38 @@
             </div>
 
             <!-- 3d modeling -->
-            <div class="product_design">
+            <div class="menu_product">
                 <h4>3d <strong>MODELING</strong></h4>
-                <div class="product_img">
-                    <img src="./images1/3d_design1.png" alt="가전제품 합성이미지">
-                    <img src="./images1/3d_design2.png" alt="유리병 3d 디자인 이미지">
-                    <img src="./images1/3d_design3.png" alt="파이프 3d 디자인">
-                    <img src="./images1/3d_design4.png" alt="가전제품 3d 디자인이미지">
-                    <img src="./images1/3d_design5.png" alt="해양호텔 합성 이미지">
-                    <img src="./images1/3d_design6.png" alt="안전모 합성 이미지">
-                    <img src="./images1/3d_design7.png" alt="투구 모델링 이미지">
-                    <img src="./images1/3d_design4.png" alt="가전제품 3d 디자인이미지">
+                <div class="drag">
+                    <h6>Drag Me!</h6>
                 </div>
-                <p><a href="#">View More</a></p>
-            </div>
-            
+                <div class="menu--wrapper">
+                  <div class="menu--item">
+                    <figure><img src="./images1/3d_design1.png" alt="3d_design1" /></figure>
+                  </div>
+              
+                  <div class="menu--item">
+                    <figure><img src="./images1/3d_design2.png" alt="3d_design2" /></figure>
+                  </div>
+              
+                  <div class="menu--item">
+                    <figure><img src="./images1/3d_design3.png" alt="3d_design3" /></figure>
+                  </div>
+              
+                  <div class="menu--item">
+                    <figure><img src="./images1/3d_design4.png" alt="3d_design4" /></figure>
+                  </div>
+              
+                  <div class="menu--item">
+                    <figure><img src="./images1/3d_design5.png" alt="3d_design5" /></figure>
+                  </div>
+              
+                  <div class="menu--item">
+                    <figure><img src="./images1/3d_design6.png" alt="3d_design6" /></figure>
+                  </div>
+                </div>
+              </div>
+              <p><a href="#">View More</a></p>
         </div>
 
         <!-- about me -->
@@ -289,6 +312,6 @@
         <a href="#"><img src="./images1/daisy_top.png" alt="데이지 이미지 주위를 텍스트가 감싸고 있음"></a>
     </div>
 
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js'></script><script  src="./script.js"></script>
 </body>
 </html>

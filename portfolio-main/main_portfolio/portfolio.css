@@ -172,43 +172,51 @@ header .gnb span {
 }
 
 /* 3d design */
-.work .product_design {
+.work .menu_product {
   overflow: hidden;
   width: 100%;
-  height: 90vh;
+  height: 80vh;
 }
-.work .product_design h4 {
+.work .menu_product .menu--wrapper .menu--item {
+  margin-top: 100px;
+}
+.work .menu_product h4 {
   text-align: center;
 }
-.work .product_design h4 strong {
+
+.work .menu_product .drag h6 {
+  font-family: var(--en-font);
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--point-color);
+  text-align: center;
+  margin-top: 80px;
+
+  position: relative;
+}
+
+.work .menu_product h4 strong {
   color: var(--point-color);
   text-shadow: none;
 }
 
-.work .product_design .product_img {
-  margin-top: 100px;
-  display: flex;
-  /* justify-content: center; */
-  gap: 2%;
-}
-.work .product_design img {
-  width: 20vw;
-  cursor: pointer;
+.menu_product p {
+  text-align: center;
 }
 
-.product_design p {
+.contents p {
   text-align: center;
   color: var(--point-color);
   font-size: 1.2rem;
   width: 250px;
   height: 60px;
   line-height: 60px;
-  margin: 100px auto;
+  margin: 30px auto;
   background: url(./images1/tape.png) no-repeat 50% / cover;
   transition: 0.3s;
 }
 
-.product_design p:hover {
+.contents p:hover {
   font-weight: bold;
   transform: scale(1.1);
 }
