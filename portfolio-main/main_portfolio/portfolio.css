@@ -22,8 +22,13 @@ header .gnb {
   font-size: 1.25rem;
   font-weight: 500;
   color: #fff;
+  transition: 0.3s;
 }
 
+header .gnb.change_header {
+  color: var(--point-color);
+  font-weight: 700;
+}
 header .gnb span {
   margin-left: 10px;
 }
@@ -33,6 +38,7 @@ header .gnb span {
   height: 100vh;
   background: url(./images1/main_banner_img.png) no-repeat 50% 50% / cover;
   position: relative;
+  z-index: 999;
 }
 
 .main img {
@@ -353,10 +359,6 @@ header .gnb span {
 .pofile img {
   width: 25vw;
   object-fit: contain;
-  transition: 0.3s;
-}
-.pofile img:hover {
-  transform: rotate(-10deg);
 }
 .pofile .profile_txt2 {
   display: flex;
@@ -450,4 +452,5 @@ header .gnb span {
   position: fixed;
   bottom: 10px;
   right: 20px;
+  transition: 0.3s;
 }
