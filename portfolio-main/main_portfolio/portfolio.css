@@ -254,71 +254,52 @@ header .gnb span {
 .skills .skill_box {
   width: 100%;
   height: 100vh;
-  background-color: #ddd;
 }
 .skills .tool_list {
   display: flex;
   gap: 10px;
-  width: 90%;
+  width: 94%;
   justify-content: end;
-  margin-top: 20px;
 }
 .skills .tool_list img {
   width: 35px;
   height: 35px;
 }
-
 .skills .skill_box {
-  width: 80%;
-  height: 800px;
-  margin: 100px auto;
-  margin-bottom: 0;
-  color: #fff;
-  background: url(./images1/blue_paper.png);
-
-  position: relative;
-}
-
-.skills .skill_box img:nth-child(1) {
-  position: absolute;
-  top: -60px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 100px;
-}
-
-.skills .skill_box img:last-child {
-  position: absolute;
-  bottom: -60px;
-  left: -100px;
-  width: 300px;
-}
-.skills .skill_box .skill_list_txt {
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  width: 95%;
+  margin: 50px auto;
+  display: grid;
   justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
-.skills .skill_box .skill_list_txt h1 {
+
+.skills .skill_box h2 {
+  text-align: center;
+  color: #fff;
+  margin: 50px auto;
+  margin-bottom: 20px;
+  font-weight: 700;
   font-size: 2rem;
-  font-weight: bold;
 }
-.skills .skill_box .skill_list_txt .graphic,
-.skills .skill_box .skill_list_txt .html,
-.skills .skill_box .skill_list_txt .java,
-.skills .skill_box .skill_list_txt .git {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 2px solid #fff;
-  height: 20%;
+.skills .skill_box .skill_detail {
+  width: 40vw;
+  margin: 0 auto;
+  padding: 50px;
+  background: url(./images1/skill-background.png) no-repeat 50% / contain;
+  transition: 0.4s;
 }
-.skills .skill_box .skill_list_txt .detail_skills li {
+.skills .skill_box .skill_detail:hover {
+  transform: scale(1.1);
+  width: 80%;
+}
+.skills .skill_box .skill_detail li {
+  border-bottom: 1px solid #fff;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
   list-style: disc;
-  padding: 5px 0;
+  font-size: 1.25rem;
 }
 
 /* moving text */
