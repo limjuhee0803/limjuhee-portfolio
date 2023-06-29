@@ -215,11 +215,14 @@ header .gnb span {
 
 .work .menu_product .drag h6 {
   font-family: var(--en-font);
-  font-weight: bold;
   font-size: 2rem;
   color: var(--point-color);
   text-align: center;
+  width: 200px;
+  margin: 0 auto;
   margin-top: 50px;
+  background-color: var(--point-color);
+  color: #fff;
 
   position: relative;
 }
@@ -364,6 +367,7 @@ header .gnb span {
   font-size: 1.25rem;
   font-weight: 700;
   padding-top: 20px;
+  color: var(--point-color);
 }
 .pofile img {
   width: 25vw;

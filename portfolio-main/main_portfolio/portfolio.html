@@ -23,6 +23,11 @@
     <!-- common -->
     <link rel="stylesheet" href="./common.css">
 
+    <!-- code pen - ui/ux -->
+    <link rel="stylesheet" href="./project_ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet">
+
     <!-- css-product -->
     <link rel="stylesheet" href="./product_style.css">
     <!-- css-pc -->
@@ -39,6 +44,10 @@
      <meta property="og:description" content="2023년에 제작된 임주희 포트폴리오입니다.">
      <meta property="og:image" content="./images/ux_design1.png">
      <meta property="og:url" content="./images/ux_design1.png">
+
+    <!-- code pen - ui/ux -->
+     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
  
 </head>
 <body>
@@ -55,8 +64,6 @@
     <div class="main">
         <img src="./images1/daisy.png" alt="데이지 꽃 이미지">
     </div>
-
-    <!-- <img src="./images1/tape.png" alt="파란색 마스킹테이프" id="tape1"> -->
 
 
     <!-- contents -->
@@ -113,30 +120,95 @@
             </div>
 
             <!-- ui/ux design -->
-            <div class="ux_design">
+            <div class="ui_design">
                 <h4>UI/UX</h4>
                 <h5>DESIGN</h5>
-
-                <div class="simpleSlide">
-                    <ul class="slideWrapper">
-                        <li class="slideItem active" id="bg1">bg1</li>
-                        <li class="slideItem" id="bg2">bg2</li>
-                        <li class="slideItem" id="bg3">bg3</li>
-                        <li class="slideItem" id="bg4">bg4</li>
-                    </ul>
-                    <ul class="slideBtn">
-                        <li class="active">btn1</li>
-                        <li>btn2</li>
-                        <li>btn3</li>
-                        <li>btn4</li>
-                    </ul>
-                </div>
-
             </div>
+            <div class="app">
+                <div class="cardList">
+                    <button class="cardList__btn btn btn--left">
+                        <div class="icon">
+                            <svg>
+                                <use xlink:href="#arrow-left"></use>
+                            </svg>
+                        </div>
+                    </button>
+            
+                    <div class="cards__wrapper">
+                        <div class="card current--card">
+                            <div class="card__image">
+                                <img src="./images1/ux_design1.png" alt="ux_design1.png" />
+                            </div>
+                        </div>
+            
+                        <div class="card next--card">
+                            <div class="card__image">
+                                <a href="#"><img src="./images1/ux_design2.png" alt="ux_design2.png" /></a>
+                            </div>
+                        </div>
+            
+                        <div class="card previous--card">
+                            <div class="card__image">
+                                <img src="./images1/ux_design3.png" alt="ux_design3.png" />
+                            </div>
+                        </div>
+                    </div>
+            
+                    <button class="cardList__btn btn btn--right">
+                        <div class="icon">
+                            <svg>
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            
+                <div class="infoList">
+                    <div class="info__wrapper">
+                        <div class="info current--info">
+                            <h1 class="text name">Project1</h1>
+                            <p class="text description"><a href="#">View More</a></p>
+                        </div>
+            
+                        <div class="info next--info">
+                            <h1 class="text name">Project2</h1>
+                            <p class="text description"><a href="#">View More</a></p>
+                        </div>
+            
+                        <div class="info previous--info">
+                            <h1 class="text name">Project3</h1>
+                            <p class="text description"><a href="#">View More</a></p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="app__bg">
+                    <div class="app__bg__image current--image">
+                        <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
+                    </div>
+                    <div class="app__bg__image next--image">
+                        <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+                    </div>
+                    <div class="app__bg__image previous--image">
+                        <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+                    </div>
+                </div>
+            </div>
+            
+            
+            <svg class="icons" style="display: none;">
+                <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                    <polyline points='328 112 184 256 328 400' style='fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+                </symbol>
+                <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                    <polyline points='184 112 328 256 184 400' style='fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+                </symbol>
+            </svg>
+            
 
             <!-- 3d modeling -->
             <div class="menu_product">
-                <h4>3d <strong>MODELING</strong></h4>
+                <h4>3D <strong>MODELING</strong></h4>
                 <div class="drag">
                     <h6>Drag Me!</h6>
                 </div>
@@ -162,11 +234,11 @@
                   </div>
               
                   <div class="menu--item">
-                    <figure><img src="./images1/3d_design6.png" alt="3d_design6" /></figure>
+                    <figure><img src="./images1/3d_design6.png"  alt="3d_design6" /></figure>
                   </div>
                 </div>
               </div>
-              <p id="view_more"><a href="#">View More</a></p>
+              <p id="view_more"><a href="https://limjuhee0803.github.io/limjuhee-portfolio/portfolio-main/3D_modeling/3D.html" target="_blank">View More</a></p>
         </div>
 
         <!-- about me -->
@@ -179,8 +251,8 @@
                     <div class="graphic skill_detail">
                         <h2># Graphic</h2>
                         <ul>
-                            <li>Rhino, Keyshot을 이용한 <span>3d 모델링 작업</span></li>
-                            <li>Rhiono, AutoCad를 이용한 <span>2d 도면 작업</span></li>
+                            <li>Rhino, Keyshot을 이용한 <span>3D 모델링 작업</span></li>
+                            <li>Rhiono, AutoCad를 이용한 <span>2D 도면 작업</span></li>
                             <li>Photoshop, Figma, Illustrator를 이용한 <span>UI/UX 프로토타입 제작</span></li>
                             <li>Photoshop, Figma, Illustrator를 이용한 <span>이미지 콘텐츠 제작 및 편집</span></li>
                         </ul>
