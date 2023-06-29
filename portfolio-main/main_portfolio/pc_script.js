@@ -6,9 +6,9 @@ $(window).on('scroll', (e) => {
   console.log(pos);
 
   if (pos > scroll) {
-    $('header .gnb').addClass('change_header');
+    $('header').addClass('change_header');
   } else {
-    $('header .gnb').removeClass('change_header');
+    $('header').removeClass('change_header');
   }
 });
 

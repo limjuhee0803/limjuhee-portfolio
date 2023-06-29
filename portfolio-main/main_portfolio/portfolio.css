@@ -5,30 +5,40 @@
 
 /**** header ****/
 header {
+  color: var(--point-color);
   width: 100%;
   height: 50px;
   line-height: 50px;
   position: fixed;
-  top: 0;
-  background-color: transparent;
+  top: -80px;
   z-index: 9999;
+  transition: 0.3s;
+
+  font-size: 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background: url(./images1/header_background.png) no-repeat 50% / cover;
+}
+header h1 {
+  font-family: var(--en-font);
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 0 3rem;
 }
 
 header .gnb {
   margin: 0 3rem;
   display: flex;
   justify-content: right;
+  font-weight: 700;
   gap: 5%;
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: #fff;
-  transition: 0.3s;
 }
 
-header .gnb.change_header {
-  color: var(--point-color);
-  font-weight: 700;
+header.change_header {
+  top: 0;
+  box-shadow: 5px 5px 25px rgba(148, 148, 148, 0.5);
 }
+
 header .gnb span {
   margin-left: 10px;
 }

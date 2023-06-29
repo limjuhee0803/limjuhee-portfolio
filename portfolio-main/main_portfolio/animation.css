@@ -102,3 +102,14 @@
     transform: translate(-50%, 0);
   }
 }
+
+/* product- drag me */
+.work .menu_product .drag h6 {
+  animation: product_drag 1.4s step-end infinite;
+}
+
+@keyframes product_drag {
+  50% {
+    opacity: 0;
+  }
+}
