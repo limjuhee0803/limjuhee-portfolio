@@ -12,7 +12,7 @@ header {
   position: fixed;
   top: -80px;
   z-index: 9999;
-  transition: 0.3s;
+  transition: 0.5s;
 
   font-size: 1.25rem;
   display: grid;
@@ -138,14 +138,14 @@ header .gnb span {
 .simpleSlide {
   width: 100%;
   margin: 0 auto;
-  height: 80vh;
+  height: 70vh;
   position: relative;
   overflow: hidden;
 }
 
 .simpleSlide .slideWrapper {
   width: 400%;
-  height: 75%;
+  height: 70%;
   display: flex;
 }
 
@@ -240,6 +240,9 @@ header .gnb span {
   margin-bottom: 100px;
   background: url(./images1/tape.png) no-repeat 50% / cover;
   transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  z-index: 999;
 }
 
 .contents #view_more:hover {
@@ -346,10 +349,6 @@ header .gnb span {
   font-weight: 300;
   line-height: 1.5;
   transition: 0.3s;
-}
-.pofile .profile_txt h1:hover {
-  transform-origin: top left;
-  transform: translateY(-20px) scale(1.1);
 }
 .pofile .profile_txt strong {
   background: url(./images1/tape.png) no-repeat 50% / cover;
