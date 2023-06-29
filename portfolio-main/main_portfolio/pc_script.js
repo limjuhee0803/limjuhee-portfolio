@@ -12,20 +12,14 @@ $(window).on('scroll', (e) => {
   }
 });
 
-/*
-$(document).ready(function () {
-  $(window).on('mousewheel', function (event, delta) {
-    if (delta > 0) {
-      $('.back_top img').attr({
-        src: './images/daisy_top_navy.png',
-        alt: 'daisy_navy',
-      });
-    } else if (delta < 0) {
-      $('.back_top img').attr({
-        src: './images/daisy_top_navy.png',
-        alt: 'daisy_navy',
-      });
-    }
-  });
+//back to top
+$(window).on('scroll', (e) => {
+  let pos = $(e.target).scrollTop();
+  console.log(pos);
+
+  if (pos > scroll) {
+    $('.back_top img ').addClass('change_daisy');
+  } else {
+    $('.back_top img ').removeClass('change_daisy');
+  }
 });
-*/

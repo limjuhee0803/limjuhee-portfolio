@@ -36,7 +36,7 @@ header .gnb {
 
 header.change_header {
   top: 0;
-  box-shadow: 5px 5px 25px rgba(148, 148, 148, 0.5);
+  box-shadow: 5px 5px 25px rgba(88, 88, 88, 0.5);
 }
 
 header .gnb span {
@@ -48,7 +48,6 @@ header .gnb span {
   height: 100vh;
   background: url(./images1/main_banner_img.png) no-repeat 50% 50% / cover;
   position: relative;
-  z-index: 999;
 }
 
 .main img {
@@ -460,7 +459,11 @@ header .gnb span {
 .back_top img {
   width: 100px;
   position: fixed;
-  bottom: 10px;
+  bottom: -200px;
   right: 20px;
   transition: 0.3s;
+}
+
+.back_top img.change_daisy {
+  bottom: 20px;
 }
