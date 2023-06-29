@@ -134,56 +134,69 @@ header .gnb span {
   overflow: hidden;
 }
 
-.work .ux_design .project2 {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 5%;
-}
-.work .ux_design .project2_gnb {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 50px;
+/* -------------------- */
+.simpleSlide {
+  width: 100%;
+  margin: 0 auto;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
 }
 
-.work .ux_design .project2_gnb li {
-  width: 15px;
-  height: 15px;
-  background-color: #272727;
-  border-radius: 50%;
+.simpleSlide .slideWrapper {
+  width: 400%;
+  height: 75%;
+  display: flex;
+}
+
+.simpleSlide .slideWrapper .slideItem {
+  width: 100%;
+  height: 100%;
+  background: no-repeat 50% / cover;
   text-indent: -9999px;
 }
-.work .ux_design .project2 img:nth-child(1),
-.work .ux_design .project2 img:nth-child(3) {
-  transform: scale(0.8);
+
+.simpleSlide .slideWrapper #bg1 {
+  background: url(./images1/ux_design1.png) no-repeat 50% / contain;
+  background-size: 50%;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+.simpleSlide .slideWrapper #bg2 {
+  background: url(./images1/ux_design2.png) no-repeat 50% / contain;
+  background-size: 50%;
+}
 
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+.simpleSlide .slideWrapper #bg3 {
+  background: url(./images1/ux_design3.png) no-repeat 50% / contain;
+  background-size: 50%;
+}
+
+.simpleSlide .slideWrapper #bg4 {
+  background: url(./images1/ux_design1.png) no-repeat 50% / contain;
+  background-size: 50%;
+}
+
+.simpleSlide .slideBtn {
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
+  gap: 10px;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 160px;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 60%;
-  height: 100%;
-  object-fit: contain;
+.simpleSlide .slideBtn li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 3px;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.simpleSlide .slideBtn li.active {
+  background-color: #10243b;
 }
 
 /* 3d design */
@@ -300,6 +313,13 @@ header .gnb span {
   color: #fff;
   list-style: disc;
   font-size: 1.25rem;
+}
+
+.skills .skill_box .skill_detail li span {
+  padding: 0 5px;
+  background-color: #fff;
+  color: var(--point-color);
+  font-weight: bold;
 }
 
 /* moving text */
