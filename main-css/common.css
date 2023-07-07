@@ -1,16 +1,10 @@
 @charset "utf-8";
-/* 스크롤바 */
-::-webkit-scrollbar {
-  width: 10px;
+a {
+  color: inherit;
 }
-
-::-webkit-scrollbar-track {
-  background-color: #ecf8f9;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--point-color);
-  border-radius: 10px;
+/**  scrollbar 제거  **/
+body::-webkit-scrollbar {
+  display: none;
 }
 
 html {
@@ -51,7 +45,7 @@ h3:after {
 
 /* contents */
 .contents {
-  background: url(./images1/background_pattern.png) 50% / contain;
+  background: url(../main-images/background_pattern.png) 50% / contain;
 }
 
 /* 소제목2 */

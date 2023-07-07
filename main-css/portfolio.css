@@ -17,7 +17,7 @@ header {
   font-size: 1.25rem;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  background: url(./images1/header_background.png) no-repeat 50% / cover;
+  background: url(../main-images/header_background.png) no-repeat 50% / cover;
 }
 header h1 {
   font-family: var(--en-font);
@@ -46,7 +46,7 @@ header .gnb span {
 .main {
   width: 100%;
   height: 100vh;
-  background: url(./images1/main_banner_img.png) no-repeat 50% 50% / cover;
+  background: url(../main-images/main_banner_img.png) no-repeat 50% 50% / cover;
   position: relative;
 }
 
@@ -101,7 +101,7 @@ header .gnb span {
   text-align: center;
 }
 .web_design .poject1_list p:nth-child(1) {
-  background: url(./images1/tape.png) no-repeat 50% / cover;
+  background: url(../main-images/tape.png) no-repeat 50% / cover;
 }
 
 .web_desig .right_img {
@@ -157,22 +157,22 @@ header .gnb span {
 }
 
 .simpleSlide .slideWrapper #bg1 {
-  background: url(./images1/ux_design1.png) no-repeat 50% / contain;
+  background: url(../main-images/ux_design1.png) no-repeat 50% / contain;
   background-size: 50%;
 }
 
 .simpleSlide .slideWrapper #bg2 {
-  background: url(./images1/ux_design2.png) no-repeat 50% / contain;
+  background: url(../main-images/ux_design2.png) no-repeat 50% / contain;
   background-size: 50%;
 }
 
 .simpleSlide .slideWrapper #bg3 {
-  background: url(./images1/ux_design3.png) no-repeat 50% / contain;
+  background: url(../main-images/ux_design3.png) no-repeat 50% / contain;
   background-size: 50%;
 }
 
 .simpleSlide .slideWrapper #bg4 {
-  background: url(./images1/ux_design1.png) no-repeat 50% / contain;
+  background: url(../main-images/ux_design1.png) no-repeat 50% / contain;
   background-size: 50%;
 }
 
@@ -241,7 +241,7 @@ header .gnb span {
   line-height: 60px;
   margin: -130px auto;
   margin-bottom: 100px;
-  background: url(./images1/tape.png) no-repeat 50% / cover;
+  background: url(../main-images/tape.png) no-repeat 50% / cover;
   transition: 0.3s;
   cursor: pointer;
   position: relative;
@@ -306,7 +306,7 @@ header .gnb span {
   width: 40vw;
   margin: 0 auto;
   padding: 50px;
-  background: url(./images1/skill-background.png) no-repeat 50% / contain;
+  background: url(../main-images/skill-background.png) no-repeat 50% / contain;
   transition: 0.4s;
 }
 .skills .skill_box .skill_detail:hover {
@@ -354,7 +354,7 @@ header .gnb span {
   transition: 0.3s;
 }
 .pofile .profile_txt strong {
-  background: url(./images1/tape.png) no-repeat 50% / cover;
+  background: url(../main-images/tape.png) no-repeat 50% / cover;
 }
 .pofile .profile_txt em {
   font-style: normal;
@@ -392,7 +392,7 @@ header .gnb span {
 /**** contact ****/
 .contact {
   height: 100vh;
-  background: url(./images1/contact_background.png) 50% / contain;
+  background: url(../main-images/contact_background.png) 50% / contain;
   color: #fff;
   text-align: center;
   position: relative;
@@ -439,7 +439,7 @@ header .gnb span {
   text-transform: capitalize;
   font-family: var(--en-font);
 
-  background: url(./images1/contact_paper.png) no-repeat 50% / cover;
+  background: url(../main-images/contact_paper.png) no-repeat 50% / cover;
   transition: 0.3s;
 }
 .contact .contact_list li:hover {
