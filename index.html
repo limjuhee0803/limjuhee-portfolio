@@ -2,411 +2,369 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" , content="width=device-width" , initial-scale="1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>portfolio</title>
 
-    <!-- open graph -->
-    <meta property="og:title" content="limjuhee's portfolio">
-    <meta property="og:description" content="2023년에 제작된 임주희 포트폴리오입니다.">
-    <meta property="og:image" content="./main-portfolio/main-images/ux_design1.png">
-    <meta property="og:url" content="./main-portfolio/main-images/ux_design1.png">
+  <!-- open graph -->
+  <meta property="og:title" content="limjuhee's portfolio">
+  <meta property="og:description" content="2023년에 제작된 임주희 포트폴리오입니다.">
+  <meta property="og:image" content="./main-portfolio/main-images/ux_design1.png">
+  <meta property="og:url" content="./main-portfolio/main-images/ux_design1.png">
 
-    <!-- 리셋 -->
-    <link rel="stylesheet" href="./common/minireset.min.css">
+  <!-- 리셋 -->
+  <link rel="stylesheet" href="./common/minireset.min.css">
 
-    <!-- 폰트 -->
-    <link rel="stylesheet" href="./common/fonts/fonts.css">
+  <!-- 폰트 -->
+  <link rel="stylesheet" href="./common/fonts/fonts.css">
 
-    <!-- common -->
-    <link rel="stylesheet" href="./main-portfolio/main-css/common.css">
+  <!-- common -->
+  <link rel="stylesheet" href="./main-portfolio/main-css/common.css">
 
-    <!-- css - ui/ux -->
-    <link rel="stylesheet" href="./main-portfolio/main-css/project_ui.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap" rel="stylesheet">
+  <!-- css - ui/ux -->
+  <link rel="stylesheet" href="./main-portfolio/main-css/project_ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap" rel="stylesheet">
 
-    <!-- css-product -->
-    <link rel="stylesheet" href="./main-portfolio/main-css/product_style.css">
+  <!-- css-product -->
+  <link rel="stylesheet" href="./main-portfolio/main-css/product_style.css">
 
-    <!-- css-pc -->
-    <link rel="stylesheet" href="./main-portfolio/main-css/portfolio.css">
+  <!-- css-pc -->
+  <link rel="stylesheet" href="./main-portfolio/main-css/index.css">
 
-    <!-- animation -->
-    <link rel="stylesheet" href="./main-portfolio/main-css/animation.css">
+  <!-- animation -->
+  <link rel="stylesheet" href="./main-portfolio/main-css/animation.css">
 
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./main-portfolio/main-favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./main-portfolio/main-favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./main-portfolio/main-favicon/favicon-16x16.png">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./main-portfolio/main-favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./main-portfolio/main-favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./main-portfolio/main-favicon/favicon-16x16.png">
 
-    <!-- script-->
-    <script src="./common/jquery-3.7.0.min.js"></script>
-    <script src="./common/jquery-ui.min.js"></script>
+  <!-- script-->
+  <script src="./common/jquery-3.7.0.min.js"></script>
+  <script src="./common/jquery-ui.min.js"></script>
 
-    <!-- script - ui/ux -->
-    <script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+  <!-- script - ui/ux design -->
+  <script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
 
-    <!-- script - product -->
-    <script defer src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js'></script>
-    <script defer src="./main-portfolio/main-js/product_script.js"></script>
+  <!-- script - product design -->
+  <script defer src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js'></script>
+  <script defer src="./main-portfolio/main-js/product_script.js"></script>
 
-    <!-- script - pc -->
-    <script defer src="./main-portfolio/main-js/pc_script.js"></script>
-
+  <!-- script - pc(내가 적용한 js) -->
+  <script defer src="./main-portfolio/main-js/pc2_script.js"></script>
 </head>
 
 <body>
-    <!-- header -->
-    <header>
-        <h1>portfolio</h1>
-        <menu class="gnb">
-            <li><a href="#work">01 <span>WORKS</span></li></a>
-            <li><a href="#about">02 <span>ABOUT ME</span></li></a>
-        </menu>
-    </header>
 
-    <!-- main화면 -->
-    <div class="main full-page">
-        <img src="./main-portfolio/main-images/daisy.png" alt="데이지 꽃 이미지">
+  <!-- header -->
+  <header>
+    <h1>portfolio</h1>
+    <menu class="gnb">
+      <li><a href="#work">01 <span>WORKS</span></li></a>
+      <li><a href="#about">02 <span>ABOUT ME</span></li></a>
+    </menu>
+  </header>
+
+  <!-- main화면 -->
+  <div class="main full-page">
+    <img src="./main-portfolio/main-images/daisy.png" alt="데이지 꽃 이미지">
+  </div>
+
+
+  <!-- work -->
+  <!-- web design -->
+  <div class="web-design full-page">
+    <h3>WORKS</h3>
+  </div>
+
+  <!-- ui/ux design -->
+  <div class="uiDesign full-page">
+    <div class="ui_design">
+      <h4>UI/UX</h4>
+      <h5>DESIGN</h5>
     </div>
-
-
-    <!-- contents -->
-    <div class="contents">
-        <!-- work화면 -->
-        <div class="work" id="work">
-            <h3>WORKS</h3>
-
-            <!-- web design -->
-            <div class="web_design">
-                <h4>WEB</h4>
-                <h5>DESIGN</h5>
-
-                <div class="project1">
-                    <div class="poject1_list">
-                        <p class="pr01">portfolio</p>
-                        <p class="pr02">jeep</p>
-                        <p class="pr03">randy's donut</p>
-                        <p class="pr04">project4</p>
-                        <p class="pr05">project5</p>
-                    </div>
-
-                    <div class="center_img">
-                        <div class="img00 img01"><img src="./main-portfolio/main-images/project1.png" alt="project1">
-                        </div>
-                        <!-- <div class="img00 img01"><img src="./main-images/project2.png" alt="project2"></div>
-                        <div class="img00 img01"><img src="./main-images/project3.png" alt="project3"></div> -->
-                    </div>
-
-                    <div class="right_img">
-                        <div class="avtive_line">
-                            line
-                        </div>
-                        <div class="thumb_img00 thumb_img01">
-                            <img src="./main-portfolio/main-images/project1.png" alt="project1">
-                        </div>
-
-                        <div class="thumb_img00 thumb_img02">
-                            <img src="./main-portfolio/main-images/project2.png" alt="project2">
-                        </div>
-
-                        <div class="thumb_img00 thumb_img03">
-                            <img src="./main-portfolio/main-images/project3.png" alt="project3">
-                        </div>
-
-                        <div class="thumb_img00 thumb_img04">
-                            <img src="./main-portfolio/main-images/project1.png" alt="project4">
-                        </div>
-
-                        <div class="thumb_img00 thumb_img05">
-                            <img src="./main-portfolio/main-images/project2.png" alt="project5">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ui/ux design -->
-            <div class="ui_design">
-                <h4>UI/UX</h4>
-                <h5>DESIGN</h5>
-            </div>
-            <div class="app">
-                <div class="cardList">
-                    <button class="cardList__btn btn btn--left">
-                        <div class="icon">
-                            <svg>
-                                <use xlink:href="#arrow-left"></use>
-                            </svg>
-                        </div>
-                    </button>
-
-                    <div class="cards__wrapper">
-                        <div class="card current--card">
-                            <div class="card__image">
-                                <img src="./main-portfolio/main-images/uiux_project1.png" alt="ux_design1.png" />
-                            </div>
-                        </div>
-
-                        <div class="card next--card">
-                            <div class="card__image">
-                                <a href="#"><img src="./main-portfolio/main-images/ux_design2.png"
-                                        alt="ux_design2.png" /></a>
-                            </div>
-                        </div>
-
-                        <div class="card previous--card">
-                            <div class="card__image">
-                                <img src="./main-portfolio/main-images/ux_design4.png" alt="ux_design3.png" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <button class="cardList__btn btn btn--right">
-                        <div class="icon">
-                            <svg>
-                                <use xlink:href="#arrow-right"></use>
-                            </svg>
-                        </div>
-                    </button>
-                </div>
-
-                <div class="infoList">
-                    <div class="info__wrapper">
-                        <div class="info current--info">
-                            <h1 class="text name">내 손안의 분리배출</h1>
-                            <p class="text description"><a href="#">View More</a></p>
-                        </div>
-
-                        <div class="info next--info">
-                            <h1 class="text name">Project2</h1>
-                            <p class="text description"><a href="#">View More</a></p>
-                        </div>
-
-                        <div class="info previous--info">
-                            <h1 class="text name">Catdog Friends</h1>
-                            <p class="text description"><a href="#">View More</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="app__bg">
-                    <div class="app__bg__image current--image">
-                        <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
-                    </div>
-                    <div class="app__bg__image next--image">
-                        <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
-                    </div>
-                    <div class="app__bg__image previous--image">
-                        <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
-                    </div>
-                </div>
-            </div>
-
-
-            <svg class="icons" style="display: none;">
-                <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-                    <polyline points='328 112 184 256 328 400'
-                        style='fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
-                </symbol>
-                <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-                    <polyline points='184 112 328 256 184 400'
-                        style='fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
-                </symbol>
+    <div class="app">
+      <div class="cardList">
+        <button class="cardList__btn btn btn--left">
+          <div class="icon">
+            <svg>
+              <use xlink:href="#arrow-left"></use>
             </svg>
+          </div>
+        </button>
 
-
-            <!-- 3d modeling -->
-            <div class="menu_product">
-                <h4>3D <strong>MODELING</strong></h4>
-                <div class="drag">
-                    <h6>Drag Me!</h6>
-                </div>
-                <div class="menu--wrapper">
-                    <div class="menu--item">
-                        <figure><img src="./main-portfolio/main-images/3d_design1.png" alt="3d_design1" /></figure>
-                    </div>
-
-                    <div class="menu--item">
-                        <figure><img src="./main-portfolio/main-images/3d_design2.png" alt="3d_design2" /></figure>
-                    </div>
-
-                    <div class="menu--item">
-                        <figure><img src="./main-portfolio/main-images/3d_design3.png" alt="3d_design3" /></figure>
-                    </div>
-
-                    <div class="menu--item">
-                        <figure><img src="./main-portfolio/main-images/3d_design4.png" alt="3d_design4" /></figure>
-                    </div>
-
-                    <div class="menu--item">
-                        <figure><img src="./main-portfolio/main-images/3d_design5.png" alt="3d_design5" /></figure>
-                    </div>
-
-                    <div class="menu--item">
-                        <figure><img src="./main-portfolio/main-images/3d_design6.png" alt="3d_design6" /></figure>
-                    </div>
-
-                    <div class="menu--item">
-                        <figure><img src="./main-portfolio/main-images/3d_design7.png" alt="3d_design7" /></figure>
-                    </div>
-
-
-
-                </div>
+        <div class="cards__wrapper">
+          <div class="card current--card">
+            <div class="card__image">
+              <img src="./main-portfolio/main-images/uiux_project1.png" alt="ux_design1.png" />
             </div>
-            <p id="view_more"><a href="https://limjuhee0803.github.io/limjuhee-portfolio/portfolio-main/3D/3D.html"
-                    target="_blank">View More</a></p>
+          </div>
+
+          <div class="card next--card">
+            <div class="card__image">
+              <a href="#"><img src="./main-portfolio/main-images/ux_design2.png" alt="ux_design2.png" /></a>
+            </div>
+          </div>
+
+          <div class="card previous--card">
+            <div class="card__image">
+              <img src="./main-portfolio/main-images/ux_design4.png" alt="ux_design3.png" />
+            </div>
+          </div>
         </div>
 
-        <!-- about me -->
-        <div class="about_me" id="about">
-            <h3>ABOUT ME</h3>
-            <!-- skills -->
-            <div class="skills">
-                <div class="skill_box">
-                    <div class="graphic skill_detail">
-                        <h2># Graphic</h2>
-                        <ul>
-                            <li>Rhino, Keyshot을 이용한 <span>3D 모델링 작업</span></li>
-                            <li>Rhiono, AutoCad를 이용한 <span>2D 도면 작업</span></li>
-                            <li>Photoshop, Figma, Illustrator를 이용한 <span>UI/UX 프로토타입 제작</span></li>
-                            <li>Photoshop, Figma, Illustrator를 이용한 <span>이미지 콘텐츠 제작 및 편집</span></li>
-                        </ul>
-                    </div>
+        <button class="cardList__btn btn btn--right">
+          <div class="icon">
+            <svg>
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </div>
+        </button>
+      </div>
 
-                    <div class="html skill_detail">
-                        <h2># HTML5 & CSS3</h2>
-                        <ul>
-                            <li><span>웹사이트 구축 및 디자인</span></li>
-                            <li>미디어 쿼리를 이용한 <span>반응형 웹 제작</span></li>
-                            <li>flex / grid / position을 이용한 <span>레이아웃 구축</span></li>
-                            <li>@keyframe을 활용한 <span>애니메이션 제어</span></li>
-                        </ul>
+      <div class="infoList">
+        <div class="info__wrapper">
+          <div class="info current--info">
+            <h1 class="text name">내 손안의 분리배출</h1>
+            <p class="text description"><a href="#">View More</a></p>
+          </div>
 
-                    </div>
+          <div class="info next--info">
+            <h1 class="text name">Project2</h1>
+            <p class="text description"><a href="#">View More</a></p>
+          </div>
 
-                    <div class="java skill_detail">
-                        <h2># JacaScript & jQuery</h2>
-                        <ul>
-                            <li>자바스크립트 <span>ES6+ 문법 이해</span></li>
-                            <li>Map과 ForEach를 활용해 <span>반복되는 코드 단축</span></li>
-                            <li>비동기 통신 Ajax를 이용한 <span>JSON데이터 활용</span></li>
+          <div class="info previous--info">
+            <h1 class="text name">Catdog Friends</h1>
+            <p class="text description"><a href="#">View More</a></p>
+          </div>
+        </div>
+      </div>
 
-                        </ul>
-
-                    </div>
-
-                    <div class="git skill_detail">
-                        <h2># Git & Github </h2>
-                        <ul>
-                            <li>Git Bash로 <span>git파일 백업 및 버전 관리, GitHub와 연동</span></li>
-                            <li>GitHub <span>프로젝트 버전 관리, 백업, 복구, 로컬 폴더 연동</span></li>
-                            <li>GitHub Organuzation을 통한 <span>git 팀 프로젝트 경험</span></li>
-                        </ul>
-
-                    </div>
-                </div>
-
-                <ul class="tool_list">
-                    <li><img src="./main-portfolio/main-images/tool1.png" alt="어도비 포토샵 로고"></li>
-                    <li><img src="./main-portfolio/main-images/tool2.png" alt="어도비 일러스트 로고"></li>
-                    <li><img src="./main-portfolio/main-images/tool3.png" alt="rhino 포토샵 로고"></li>
-                    <li><img src="./main-portfolio/main-images/tool4.png" alt="keyshot 로고"></li>
-                    <li><img src="./main-portfolio/main-images/tool5.png" alt="auto cad 로고"></li>
-                    <li><img src="./main-portfolio/main-images/tool6.png" alt="vs code 로고"></li>
-                </ul>
-            </div>
+      <div class="app__bg">
+        <div class="app__bg__image current--image">
+          <P>project1</P>
+        </div>
+        <div class="app__bg__image next--image">
+          <P>project2</P>
+        </div>
+        <div class="app__bg__image previous--image">
+          <P>project3</P>
+        </div>
+      </div>
+    </div>
 
 
-            <!-- moving_txt -->
-            <div class="moving_txt flow-text">
-                <div class="moving flow-wrap">
-                    planned delicate accurate sensitive calm ideal positive careful confident responsible realistic
-                    practical
-                    planned delicate accurate sensitive calm ideal positive careful confident responsible realistic
-                    practical
-                </div>
-            </div>
+    <svg class="icons" style="display: none;">
+      <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+        <polyline points='328 112 184 256 328 400'
+          style='fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+      </symbol>
+      <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+        <polyline points='184 112 328 256 184 400'
+          style='fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+      </symbol>
+    </svg>
 
-            <!-- profile -->
-            <div class="pofile">
-                <img src="./main-portfolio/main-images/profile.png" alt="임주희 프로필 이미지">
+  </div>
 
-                <div class="profile_txt">
-                    <h1><strong>한발자국 더</strong> 예민한<br>디자이너 <em>임주희</em>입니다.</h1>
+  <!-- product design -->
+  <div class="product-design full-page">
 
-
-                    <div class="profile_txt2">
-                        <div class="privacy">
-                            <div class="name">
-                                <h2>lim ju hee</h2>
-                                <p>1999.08.03</p>
-                            </div>
-
-                            <div class="email">
-                                <h2>email</h2>
-                                <p>limjuhee0803@naver.com</p>
-                            </div>
-
-                            <div class="address">
-                                <h2>address</h2>
-                                <p>경기도 수원시</p>
-                            </div>
-                        </div>
-
-                        <div class="experience">
-                            <h2>experiences</h2>
-                            <ul class="year">
-                                <li>2018.03
-                                    <span>협성대학교 산업 디자인과 수석입학</span>
-                                </li>
-                                <li>2020.05
-                                    <span>CANA 인턴 근무</span>
-                                </li>
-                                <li>2021.03
-                                    <span>협성대학교 산업디자인과 졸업</span>
-                                </li>
-                                <li>20223.03
-                                    <span>UI/UX 웹퍼블리셔 과정 수료</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
+    <div class="menu_product">
+      <h4>3D <strong>MODELING</strong></h4>
+      <div class="drag">
+        <h6>Drag Me!</h6>
+      </div>
+      <div class="menu--wrapper">
+        <div class="menu--item">
+          <figure><img src="./main-portfolio/main-images/3d_design1.png" alt="3d_design1" /></figure>
         </div>
 
-        <!-- contact -->
-        <div class="contact">
-            <div class="contact_title">
-                <h1>contact</h1>
+        <div class="menu--item">
+          <figure><img src="./main-portfolio/main-images/3d_design2.png" alt="3d_design2" /></figure>
+        </div>
+
+        <div class="menu--item">
+          <figure><img src="./main-portfolio/main-images/3d_design3.png" alt="3d_design3" /></figure>
+        </div>
+
+        <div class="menu--item">
+          <figure><img src="./main-portfolio/main-images/3d_design4.png" alt="3d_design4" /></figure>
+        </div>
+
+        <div class="menu--item">
+          <figure><img src="./main-portfolio/main-images/3d_design5.png" alt="3d_design5" /></figure>
+        </div>
+
+        <div class="menu--item">
+          <figure><img src="./main-portfolio/main-images/3d_design6.png" alt="3d_design6" /></figure>
+        </div>
+
+        <div class="menu--item">
+          <figure><img src="./main-portfolio/main-images/3d_design7.png" alt="3d_design7" /></figure>
+        </div>
+
+
+
+      </div>
+    </div>
+    <p id="view_more"><a href="https://limjuhee0803.github.io/limjuhee-portfolio/portfolio-main/3D/3D.html"
+        target="_blank">View More</a></p>
+  </div>
+  </div>
+
+  <!-- aboutMe -->
+  <!-- skill -->
+  <div class="skill full-page">
+    <h3>ABOUT ME</h3>
+
+    <!-- skills -->
+    <div class="skills">
+      <div class="skill_box">
+        <div class="graphic skill_detail">
+          <h2># Graphic</h2>
+          <ul>
+            <li>Rhino, Keyshot을 이용한 <span>3D 모델링 작업</span></li>
+            <li>Rhiono, AutoCad를 이용한 <span>2D 도면 작업</span></li>
+            <li>Photoshop, Figma, Illustrator를 이용한 <span>UI/UX 프로토타입 제작</span></li>
+            <li>Photoshop, Figma, Illustrator를 이용한 <span>이미지 콘텐츠 제작 및 편집</span></li>
+          </ul>
+        </div>
+
+        <div class="html skill_detail">
+          <h2># HTML5 & CSS3</h2>
+          <ul>
+            <li><span>웹사이트 구축 및 디자인</span></li>
+            <li>미디어 쿼리를 이용한 <span>반응형 웹 제작</span></li>
+            <li>flex / grid / position을 이용한 <span>레이아웃 구축</span></li>
+            <li>@keyframe을 활용한 <span>애니메이션 제어</span></li>
+          </ul>
+
+        </div>
+
+        <div class="java skill_detail detail2">
+          <h2># JacaScript & jQuery</h2>
+          <ul>
+            <li>자바스크립트 <span>ES6+ 문법 이해</span></li>
+            <li>Map과 ForEach를 활용해 <span>반복되는 코드 단축</span></li>
+            <li>비동기 통신 Ajax를 이용한 <span>JSON데이터 활용</span></li>
+
+          </ul>
+
+        </div>
+
+        <div class="git skill_detail detail2">
+          <h2># Git & Github </h2>
+          <ul>
+            <li>Git Bash로 <span>git파일 백업 및 버전 관리, GitHub와 연동</span></li>
+            <li>GitHub <span>프로젝트 버전 관리, 백업, 복구, 로컬 폴더 연동</span></li>
+            <li>GitHub Organuzation을 통한 <span>git 팀 프로젝트 경험</span></li>
+          </ul>
+
+        </div>
+      </div>
+
+      <ul class="tool_list">
+        <li><img src="./main-portfolio/main-images/tool1.png" alt="어도비 포토샵 로고"></li>
+        <li><img src="./main-portfolio/main-images/tool2.png" alt="어도비 일러스트 로고"></li>
+        <li><img src="./main-portfolio/main-images/tool3.png" alt="rhino 포토샵 로고"></li>
+        <li><img src="./main-portfolio/main-images/tool4.png" alt="keyshot 로고"></li>
+        <li><img src="./main-portfolio/main-images/tool5.png" alt="auto cad 로고"></li>
+        <li><img src="./main-portfolio/main-images/tool6.png" alt="vs code 로고"></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- profile -->
+  <div class="profile full-page">
+    <!-- moving_txt -->
+    <div class="moving_txt flow-text">
+      <div class="moving flow-wrap">
+        planned delicate accurate sensitive calm ideal positive careful confident responsible realistic
+        practical
+        planned delicate accurate sensitive calm ideal positive careful confident responsible realistic
+        practical
+      </div>
+    </div>
+
+    <!-- profile -->
+    <div class="pofile">
+      <img src="./main-portfolio/main-images/profile.png" alt="임주희 프로필 이미지">
+
+      <div class="profile_txt">
+        <h1><strong>한발자국 더</strong> 예민한<br>디자이너 <em>임주희</em>입니다.</h1>
+
+
+        <div class="profile_txt2">
+          <div class="privacy">
+            <div class="name">
+              <h2>lim ju hee</h2>
+              <p>1999.08.03</p>
             </div>
 
-            <h2>"저는 예민함을 강점으로 더욱 더 노력합니다."</h2>
-            <h4>흔히 ‘예민함’이란 부정적인 의미로 쓰입니다. 하지만 저에게 있어서 ‘예민함'이란, 사람들이 느낄 감정에 예민하게 공감하며 불편함 점들을 빠르게 캐치합니다. 또한 섬세한 작업을 돕는
-                저만의 강점입니다. </h4>
+            <div class="email">
+              <h2>email</h2>
+              <p>limjuhee0803@naver.com</p>
+            </div>
 
-            <ul class="contact_list">
-                <li><a href="mailto:limjuhee0803@naver.com" target="_blank">email</a></li>
-                <li><a href="https://github.com/limjuhee0803?tab=repositories" target="_blank">github</a></li>
-                <li><a href="#">blog</a></li>
+            <div class="address">
+              <h2>address</h2>
+              <p>경기도 수원시</p>
+            </div>
+          </div>
+
+          <div class="experience">
+            <h2>experiences</h2>
+            <ul class="year">
+              <li>2018.03
+                <span>협성대학교 산업 디자인과 수석입학</span>
+              </li>
+              <li>2020.05
+                <span>CANA 인턴 근무</span>
+              </li>
+              <li>2021.03
+                <span>협성대학교 산업디자인과 졸업</span>
+              </li>
+              <li>20223.03
+                <span>UI/UX 웹퍼블리셔 과정 수료</span>
+              </li>
             </ul>
-
-            <h5>언제나 끊임없이 노력하고, 도전하는 웹퍼블리셔가 되겠습니다. 감사합니다.</h5>
-
-            <p>© 2023 Design & Published By Lim Ju Hee. All Rights Reserved.</p>
+          </div>
         </div>
 
+
+      </div>
     </div>
-    <!-- back to top -->
-    <div class="back_top">
-        <a href="#"><img src="./main-portfolio/main-images/daisy_top_navy.png" alt="데이지 이미지 주위를 텍스트가 감싸고 있음"></a>
+  </div>
+  </div>
+
+  <!-- contact -->
+  <div class="contact full-page">
+    <div class="contact_title">
+      <h1>contact</h1>
     </div>
+
+    <h5>언제나 끊임없이 노력하고, 도전하는 웹퍼블리셔가 되겠습니다. 감사합니다.</h5>
+
+    <ul class="contact_list">
+      <li><a href="mailto:limjuhee0803@naver.com" target="_blank">email</a></li>
+      <li><a href="https://github.com/limjuhee0803?tab=repositories" target="_blank">github</a></li>
+      <li><a href="#">blog</a></li>
+    </ul>
+
+    <p>© 2023 Design & Published By Lim Ju Hee. All Rights Reserved.</p>
+  </div>
+
+
+  <!-- back to top -->
+  <div class="back_top">
+    <a href="#"><img src="./main-portfolio/main-images/daisy_top_navy.png" alt="데이지 이미지 주위를 텍스트가 감싸고 있음"></a>
+  </div>
+
 </body>
 
 </html>
