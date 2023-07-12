@@ -83,7 +83,7 @@ header .gnb span {
 }
 
 .web-design .web .web-list {
-  width: 48vw;
+  width: 50vw;
   font-size: 1.5rem;
   padding: 0 7%;
 }
@@ -96,7 +96,6 @@ header .gnb span {
 }
 
 .web-design .web .web-list li:hover {
-  border-bottom: 3px solid var(--point-color);
   background-color: rgba(33, 33, 71, 0.9);
   transform: translateX(20px);
   color: #fff;
@@ -170,6 +169,7 @@ header .gnb span {
   width: 60vw;
   position: relative;
   bottom: 100px;
+  right: 100px;
 }
 
 .web-design .web-img img {

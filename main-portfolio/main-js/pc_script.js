@@ -86,11 +86,11 @@ $('.slideBtn li').on('click', (e) => {
   $('.slideBtn li').removeClass('active');
   target.addClass('active');
 
-  currnetIdx = idx; // 현재 인덱스에 내가 클릭한 인덱스 번호 대입
+  currnetIdx = idx;
 });
 
 const autoSlide = () => {
-  currnetIdx = (currnetIdx + 1) % 4; // 0,1,2,3
+  currnetIdx = (currnetIdx + 1) % 4;
 
   $('.slideWrapper')
     .stop()
@@ -471,3 +471,25 @@ $('.web-list li')
       });
     }
   );
+
+/* 네비 바 클릭 시 해당 페이지로 이동 */
+
+$('.gnb li')
+  .eq(0)
+  .on('click', (e) => {
+    e.preventDefault();
+    scrollTo({
+      top: 900,
+      behavior: 'smooth',
+    });
+  });
+
+$('.gnb li')
+  .eq(1)
+  .on('click', (e) => {
+    e.preventDefault();
+    scrollTo({
+      top: 3750,
+      behavior: 'smooth',
+    });
+  });
