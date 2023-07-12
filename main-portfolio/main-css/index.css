@@ -17,8 +17,7 @@ header {
   font-size: 1rem;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  /* background: url(../main-images/header_background.png) no-repeat 50% / cover; */
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 header h1 {
   font-family: var(--en-font);
@@ -311,7 +310,7 @@ header .gnb span {
   gap: 8%;
   justify-content: center;
   font-size: 2rem;
-  margin: 150px 0;
+  margin: 100px 0;
 }
 .contact .contact_list li {
   width: 250px;
@@ -336,7 +335,7 @@ header .gnb span {
   font-size: 1.25rem;
   text-align: center;
   font-family: var(--kr-font);
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .contact p {
