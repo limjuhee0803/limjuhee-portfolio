@@ -28,7 +28,7 @@ body {
 /* 소제목 */
 h3 {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2rem;
   position: relative;
   margin-left: 3rem;
   padding-top: 80px;
@@ -36,11 +36,15 @@ h3 {
 }
 h3:after {
   content: '';
-  width: 340px;
+  width: 12vw;
   position: absolute;
   bottom: -10px;
   left: -90px;
   border: 2px solid var(--point-color);
+}
+
+.skill h3:after {
+  width: 14vw;
 }
 
 /* contents */
@@ -52,26 +56,26 @@ h3:after {
 .work {
   width: 100%;
 }
-.work h4,
-.work h5 {
+h4,
+h5 {
   font-family: var(--en-font);
   text-align: right;
-  font-size: 5rem;
+  font-size: 4rem;
   color: #fff;
   text-shadow: -1px 0px var(--point-color), 0px 1px var(--point-color),
     1px 0px var(--point-color), 0px -1px var(--point-color);
   transition: 0.3s;
 }
-.work h5 {
+h5 {
   color: var(--point-color);
   text-shadow: none;
 }
 
-.work h4:hover {
+h4:hover {
   transform: translateY(-10px);
 }
 
-.work h4:hover {
+h4:hover {
   text-shadow: none;
   color: var(--point-color);
 }
