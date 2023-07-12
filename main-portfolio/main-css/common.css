@@ -40,7 +40,7 @@ h3:after {
   position: absolute;
   bottom: -10px;
   left: -90px;
-  border: 2px solid var(--point-color);
+  border: 1px solid var(--point-color);
 }
 
 .skill h3:after {

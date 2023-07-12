@@ -21,6 +21,7 @@ header {
 }
 header h1 {
   font-family: var(--en-font);
+  font-size: 1.4rem;
   font-weight: bold;
   text-transform: capitalize;
   margin: 0 3rem;
@@ -70,6 +71,118 @@ header .gnb span {
 }
 
 /***** work ******/
+.web-design h4,
+.web-design h5 {
+  margin-right: 2vw;
+  font-size: 3rem;
+}
+
+.web-design .web {
+  display: flex;
+  margin-top: 50px;
+}
+
+.web-design .web .web-list {
+  width: 48vw;
+  font-size: 1.5rem;
+  padding: 0 7%;
+}
+.web-design .web .web-list li {
+  border-bottom: 2px solid var(--point-color);
+  height: 120px;
+  line-height: 100px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.web-design .web .web-list li:hover {
+  border-bottom: 3px solid var(--point-color);
+  background-color: rgba(33, 33, 71, 0.9);
+  transform: translateX(20px);
+  color: #fff;
+}
+
+.web-design .web .web-list li h2 {
+  margin-top: -60px;
+  margin-left: 12%;
+  font-size: 1.2rem;
+  width: 350px;
+}
+
+.web-design .web .web-list li h6 {
+  position: relative;
+  bottom: 50px;
+  width: 120px;
+  line-height: 30px;
+  height: 30px;
+
+  text-align: center;
+  border: 1px solid var(--point-color);
+  background-color: #fff;
+  color: var(--point-color);
+  border-radius: 20px;
+  font-size: 1.1rem;
+  opacity: 0;
+}
+
+/* .web-design .web .web-list li h6 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 120px;
+  line-height: 40px;
+  height: 40px;
+
+  text-align: center;
+  border: 1px solid var(--point-color);
+  border-radius: 20px;
+  font-size: 1.1rem;
+  background-color: rgb(255, 255, 255);
+  color: var(--point-color);
+  opacity: 0;
+} */
+
+.web-design .web .web-list li:hover h6 {
+  opacity: 1;
+}
+
+.web-design .web .web-list .web-title {
+  display: flex;
+  text-indent: 10px;
+}
+.web-design .web .web-list .web-title .web-detail {
+  display: flex;
+}
+
+.web-design .web .web-list .web-title p {
+  font-size: 0.9rem;
+}
+.web-design .web .web-list .web-title h1 {
+  font-size: 2rem;
+  margin-left: 1vw;
+  font-family: var(--en-font);
+}
+
+.web-design .web-img {
+  width: 60vw;
+  position: relative;
+  bottom: 100px;
+}
+
+.web-design .web-img img {
+  object-fit: contain;
+}
+
+.web-name {
+  display: flex;
+}
+
+.web-detail {
+  display: flex;
+}
 
 /* web-design */
 .web-design {

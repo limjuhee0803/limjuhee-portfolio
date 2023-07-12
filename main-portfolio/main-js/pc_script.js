@@ -386,3 +386,88 @@ const waitForImages = () => {
 };
 
 waitForImages();
+
+/* web-design */
+$('.web-list li').on('click', function () {
+  let idx = $(this).index();
+  $('.web-img img').attr({
+    src: `./main-portfolio/main-images/web-project${idx + 1}.png`,
+    alt: 'project2',
+  });
+});
+
+$('.web-list li')
+  .eq(0)
+  .hover(
+    (e) => {
+      let idx = $(this).index();
+      $('.web-img img').attr({
+        src: `./main-portfolio/main-images/web-project1.png`,
+        alt: 'project2',
+      });
+    },
+    (e) => {
+      let idx = $(this).index();
+      $('.web-img img').attr({
+        src: `./main-portfolio/main-images/web-project1.png`,
+        alt: 'project2',
+      });
+    }
+  );
+
+$('.web-list li')
+  .eq(1)
+  .hover(
+    (e) => {
+      let idx = $(this).index();
+      $('.web-img img').attr({
+        src: `./main-portfolio/main-images/web-project2.png`,
+        alt: 'project2',
+      });
+    },
+    (e) => {
+      let idx = $(this).index();
+      $('.web-img img').attr({
+        src: `./main-portfolio/main-images/web-project1.png`,
+        alt: 'project2',
+      });
+    }
+  );
+
+$('.web-list li')
+  .eq(2)
+  .hover(
+    (e) => {
+      let idx = $(this).index();
+      $('.web-img img').attr({
+        src: `./main-portfolio/main-images/web-project3.png`,
+        alt: 'project2',
+      });
+    },
+    (e) => {
+      let idx = $(this).index();
+      $('.web-img img').attr({
+        src: `./main-portfolio/main-images/web-project1.png`,
+        alt: 'project2',
+      });
+    }
+  );
+
+$('.web-list li')
+  .eq(3)
+  .hover(
+    (e) => {
+      let idx = $(this).index();
+      $('.web-img img').attr({
+        src: `./main-portfolio/main-images/web-project4.png`,
+        alt: 'project2',
+      });
+    },
+    (e) => {
+      let idx = $(this).index();
+      $('.web-img img').attr({
+        src: `./main-portfolio/main-images/web-project1.png`,
+        alt: 'project2',
+      });
+    }
+  );
