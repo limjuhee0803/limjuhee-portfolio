@@ -146,6 +146,7 @@ header .gnb span {
 
 .web-design .web .web-list li:hover h6 {
   opacity: 1;
+  margin-left: 100px;
 }
 
 .web-design .web .web-list .web-title {
@@ -317,7 +318,7 @@ header .gnb span {
 .skills .skill_box .skill_detail li {
   border-bottom: 1px solid #fff;
   height: 50px;
-  line-height: 60px;
+  line-height: 50px;
   color: #fff;
   list-style: disc;
   font-size: 1.2rem;
