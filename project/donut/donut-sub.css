@@ -1,0 +1,337 @@
+@import 'utf-8';
+
+/* Libre Baskerville */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
+
+/* 변수 설정 */
+:root {
+  --main-font: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR',
+    'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    sans-serif;
+  --en-font: 'Libre Baskerville', Arial, Helvetica, sans-serif;
+  --donut-font: 'Rowdies', cursive, Arial, Helvetica, sans-serif;
+  --navy-color: #0d1f3d;
+  --orange-color: #ff4e00;
+  --yellow-color: #fbc800;
+}
+
+/* common */
+body {
+  font-family: var(--main-font);
+}
+img {
+  width: auto;
+}
+
+.title {
+  padding-top: 100px;
+  margin-left: 3rem;
+}
+
+.title p {
+  color: #a1a1a1;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.title h1 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--navy-color);
+  position: relative;
+}
+
+.title h1::after {
+  content: '';
+  background-color: var(--navy-color);
+  width: 80%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+}
+
+/***** header *****/
+header {
+  color: var(--navy-color);
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+  transition: 0.5s;
+
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 25px rgba(88, 88, 88, 0.2);
+}
+header .name-gnb {
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+}
+header .name-gnb svg {
+  fill: #0d1f3d;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 10px;
+}
+
+header .name-gnb h1 {
+  font-family: var(--en-font);
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+header .gnb {
+  margin: 0 3rem;
+  display: flex;
+  justify-content: right;
+  font-weight: 700;
+  gap: 5%;
+}
+
+/***** main-화면 *****/
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url(./images/grid-pattern.svg) no-repeat 50% / cover;
+  overflow: hidden;
+}
+
+.main .main-title {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.main .main-design {
+  width: 60vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 230px auto;
+  padding-left: 100px;
+}
+
+.main .main-info {
+  text-transform: capitalize;
+  color: var(--navy-color);
+  position: absolute;
+  bottom: 6vw;
+  left: 3vw;
+}
+
+.main-title {
+  font-family: var(--en-font);
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+  position: relative;
+  width: 30%;
+  margin: 0 auto;
+  border-bottom: 3px solid var(--navy-color);
+}
+
+.main-title img {
+  width: 30px;
+  height: 30px;
+}
+
+.main .main-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.main .main-info li h2 {
+  font-weight: 700;
+  width: 80px;
+  font-size: 1.2rem;
+}
+
+.main .main-info li p {
+  font-size: 0.9rem;
+  color: #535353;
+}
+
+/* flow-text */
+/* move-text */
+.flow-text {
+  display: flex;
+  flex: 0 0 auto;
+  overflow: hidden;
+  transition: 0.3s;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #fbc800;
+  height: 70px;
+  border-top: 3px solid var(--orange-color);
+  border-bottom: 3px solid var(--orange-color);
+  position: absolute;
+  bottom: 20px;
+}
+.flow-text:hover {
+  color: #000;
+}
+.flow-wrap {
+  animation: textLoop 8s linear infinite;
+  padding-right: 1.4881vw;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+.flow-wrap {
+  animation: textLoop 10s linear infinite alternate;
+}
+.flow-wrap h3 {
+  color: var(--orange-color);
+  font-family: var(--dobut-font);
+  font-weight: 700;
+}
+.flow-wrap img {
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+  object-fit: contain;
+}
+
+@keyframes textLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+/***** project-goal *****/
+.project-goal {
+  width: 100%;
+  height: 100vh;
+}
+
+.project-goal .logo-image {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+  margin-bottom: 80px;
+}
+
+.project-goal .logo-image img {
+  width: 15vw;
+}
+
+.project-goal .goal-info {
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 400;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+.project-goal .goal-info p {
+  margin-bottom: 20px;
+}
+.project-goal .goal-keyword {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 90px;
+}
+
+.project-goal .goal-keyword li {
+  font-size: 1.2rem;
+  width: 320px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 60px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #fff;
+  color: var(--orange-color);
+  transition: 0.3s;
+  box-shadow: 20px 20px 12px rgba(221, 221, 221, 0.2),
+    11px 11px 10px rgba(221, 221, 221, 0.2),
+    5px 5px 7px rgba(221, 221, 221, 0.3), 1px 1px 4px rgba(221, 221, 221, 0.35);
+}
+
+.project-goal .goal-keyword li:hover {
+  color: #fff;
+  background-color: var(--orange-color);
+  transform: scale(0.95);
+}
+
+/***** design *****/
+.design {
+  width: 100%;
+  height: 100vh;
+}
+
+.design .design-info h1 {
+  font-size: 1.25rem;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.design .color-logo {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+}
+
+.design .color-logo .color .color-info {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 60px;
+}
+
+.design .color-logo .color .color-info li {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+  background-color: #ddd;
+}
+
+.design .color-logo .color .color-info li:nth-child(1) {
+  background-color: #222222;
+}
+
+.design .color-logo .color .color-info li:nth-child(2) {
+  background-color: #ff4e00;
+}
+
+.design .color-logo .color .color-info li:nth-child(3) {
+  background-color: #fd7f00;
+}
+
+.design .color-logo .color .color-info li:nth-child(4) {
+  background-color: #fbc800;
+}
+
+.design .color-logo .color .color-info li:nth-child(5) {
+  border: 2px solid #ddd;
+  background-color: #fff;
+  color: #222222;
+}
+
+.design .color-logo .color p {
+  margin-top: 30px;
+}
+
+/***** footer *****/
