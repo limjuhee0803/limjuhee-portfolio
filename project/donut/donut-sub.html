@@ -36,7 +36,7 @@
   <script src="../../common/jquery-3.7.0.min.js"></script>
 
   <!-- 내가 적용한 js -->
-
+  <script defer src="./donut-sub.js"></script>
 </head>
 
 <body>
@@ -51,13 +51,13 @@
     </div>
 
     <menu class="gnb">
-      <li><a href="#work">01 <span>WORKS</span></li></a>
-      <li><a href="#about">02 <span>ABOUT ME</span></li></a>
+      <li><a href="#work">01 <span>WORKS</span></a></li>
+      <li><a href="#about">02 <span>ABOUT ME</span></a></li>
     </menu>
   </header>
 
   <!-- main 화면 -->
-  <div class="main">
+  <div class="main full-page">
     <div class="main-title">
       <img src="./images/pattern1.png" alt="navy pattern">
       <h1>Randy's Donut Redesign</h1>
@@ -88,7 +88,7 @@
 
 
     <!-- flow text -->
-    <div class="flow-container">
+    <div class="flow-container ">
       <div class="flow-text">
         <div class="flow-wrap">
           <h3>TAKE A DONUT</h3> <img src="./images/donut-icon.png" alt="도넛 아이콘">
@@ -128,7 +128,7 @@
   </div>
 
   <!-- project-goal -->
-  <div class="project-goal">
+  <div class="project-goal full-page">
     <div class="goal-title title">
       <p>challenge</p>
       <h1>project goal</h1>
@@ -155,7 +155,7 @@
   </div>
 
   <!-- design -->
-  <div class="design">
+  <div class="design full-page">
     <div class="design-title title">
       <p>design</p>
       <h1>design element</h1>
@@ -190,6 +190,95 @@
         <p>채도가 높은 컬러가 메인으로 들어가기 때문에, 한글 폰트는 심플한 느낌의 noto sans kr을 사용, 영문폰트는 포인트가 되는 부분에 들어가기 때문에 볼드한 느낌의 rowdies를 사용</p>
       </div>
     </div>
+  </div>
+
+  <!-- problem -->
+  <div class="problem-solution full-page">
+    <div class="problem-title title">
+      <p>challenge</p>
+      <h1>design element</h1>
+    </div>
+
+    <div class="publishing">
+      <h1>publishing</h1>
+
+      <ul class="publishing-info">
+        <li>@keyframe을 이용한 애니메이션</li>
+        <li>Mediaquery를 활용한 반응형 웹</li>
+        <li>grid와 flex를 이용한 레이아웃 구축</li>
+      </ul>
+    </div>
+
+    <div class="problem">
+      <h1>problem & solution</h1>
+      <ul class="problem-info">
+        <li class="main-problem">
+          1. 메인 배너의 도넛 이미지가 <span>디스플레이의 사이즈에 따라 위치 변화</span>
+          <ul class="solution">
+            <li>- 메인 배너의 전체 높이를 %값 에서 고정 값인 px로 수정</li>
+            <li>- 유사한 스타일의 도넛 이미지를 수정하여 이미지 적용</li>
+          </ul>
+        </li>
+
+
+        <li class="main-problem">
+          2.공식 이미지 자료 부족으로 인한
+          <span>디자인의 어려움</span>
+          <ul class="solution">
+            <li>- 공식 한국 사이트 외에도 해외의 공식 사이트들을 찾아 이미지를 적용</li>
+            <li>- 유사한 스타일의 도넛 이미지를 수정하여 이미지 적용</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="flow-container">
+      <div class="flow-text">
+        <div class="flow-wrap">
+          <h3>TAKE A DONUT</h3> <img src="./images/donut-icon.png" alt="도넛 아이콘">
+        </div>
+        <div class="flow-wrap">
+          <h3>TAKE A DONUT</h3> <img src="./images/donut-icon.png" alt="도넛 아이콘">
+        </div>
+        <div class="flow-wrap">
+          <h3>TAKE A DONUT</h3> <img src="./images/donut-icon.png" alt="도넛 아이콘">
+        </div>
+        <div class="flow-wrap">
+          <h3>TAKE A DONUT</h3> <img src="./images/donut-icon.png" alt="도넛 아이콘">
+        </div>
+        <div class="flow-wrap">
+          <h3>TAKE A DONUT</h3> <img src="./images/donut-icon.png" alt="도넛 아이콘">
+        </div>
+        <div class="flow-wrap">
+          <h3>TAKE A DONUT</h3> <img src="./images/donut-icon.png" alt="도넛 아이콘">
+        </div>
+        <div class="flow-wrap">
+          <h3>TAKE A DONUT</h3> <img src="./images/donut-icon.png" alt="도넛 아이콘">
+        </div>
+        <div class="flow-wrap">
+          <h3>TAKE A DONUT</h3> <img src="./images/donut-icon.png" alt="도넛 아이콘">
+        </div>
+        <div class="flow-wrap">
+          <h3>TAKE A DONUT</h3> <img src="./images/donut-icon.png" alt="도넛 아이콘">
+        </div>
+        <div class="flow-wrap">
+          <h3>TAKE A DONUT</h3> <img src="./images/donut-icon.png" alt="도넛 아이콘">
+        </div>
+        <div class="flow-wrap">
+          <h3>TAKE A DONUT</h3> <img src="./images/donut-icon.png" alt="도넛 아이콘">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-txt">
+      <h3>Randy's Donut 사이트 보러가기</h3>
+
+      <p>© 2022 Design & Published By Lim Ju Hee. All Rights Reserved.</p>
+    </div>
+  </footer>
 </body>
 
 </html>

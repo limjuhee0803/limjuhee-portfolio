@@ -164,7 +164,7 @@ header .gnb {
 
 /* flow-text */
 /* move-text */
-.flow-text {
+.main .flow-text {
   display: flex;
   flex: 0 0 auto;
   overflow: hidden;
@@ -277,7 +277,7 @@ header .gnb {
 
 .design .design-info h1 {
   font-size: 1.25rem;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -285,6 +285,7 @@ header .gnb {
   margin-left: 10%;
   display: flex;
   /* justify-content: center; */
+  width: 85vw;
   gap: 5vw;
 }
 
@@ -329,8 +330,11 @@ header .gnb {
 .design .color-logo .color p {
   margin-top: 30px;
 }
-
+.design .color-logo .logo p {
+  margin-top: 24px;
+}
 .design .font {
+  width: 85vw;
   margin-left: 10%;
 }
 
@@ -340,5 +344,167 @@ header .gnb {
   gap: 50px;
   align-items: center;
 }
+/***** problem-solution *****/
+.problem-solution {
+  width: 100%;
+  height: 100vh;
+}
+.problem-solution .publishing h1,
+.problem-solution .problem h1 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-top: 50px;
+}
+.problem-solution .publishing {
+  width: 85vw;
+  margin: 0 auto;
+  border-bottom: 2px solid #ddd;
+}
 
+.problem-solution .publishing .publishing-info {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.problem-solution .publishing .publishing-info li {
+  font-size: 1.2rem;
+  width: 320px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 60px;
+  font-weight: 500;
+  text-align: center;
+  background-color: var(--orange-color);
+  color: #fff;
+  transition: 0.3s;
+  box-shadow: 20px 20px 12px rgba(221, 221, 221, 0.2),
+    11px 11px 10px rgba(221, 221, 221, 0.2),
+    5px 5px 7px rgba(221, 221, 221, 0.3), 1px 1px 4px rgba(221, 221, 221, 0.35);
+}
+
+.problem-solution .publishing .publishing-info li:hover {
+  transform: scale(0.95);
+}
+
+.problem-solution .problem {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.problem-solution .problem .problem-info {
+  margin: 50px 0;
+}
+
+.problem-solution .problem .problem-info .main-problem {
+  margin-bottom: 50px;
+  font-size: 1.25rem;
+  color: var(--orange-color);
+  font-weight: 500;
+}
+
+.problem-solution .problem .problem-info .main-problem span {
+  background-color: var(--orange-color);
+  color: #fff;
+  padding: 5px;
+}
+
+.problem-solution .problem .problem-info .main-problem .solution li {
+  font-size: 1rem;
+  margin: 20px 0;
+  text-indent: 30px;
+  color: #111111;
+}
 /***** footer *****/
+footer {
+  width: 100%;
+  height: 40vh;
+  background-color: var(--orange-color);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+footer .flow-text {
+  display: flex;
+  flex: 0 0 auto;
+  overflow: hidden;
+  transition: 0.3s;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #fbc800;
+  height: 70px;
+  border-top: 3px solid var(--orange-color);
+  border-bottom: 3px solid var(--orange-color);
+  position: absolute;
+  top: 0;
+}
+.flow-text:hover {
+  color: #000;
+}
+.flow-wrap {
+  animation: textLoop 8s linear infinite;
+  padding-right: 1.4881vw;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+.flow-wrap {
+  animation: textLoop 10s linear infinite alternate;
+}
+.flow-wrap h3 {
+  color: var(--orange-color);
+  font-family: var(--dobut-font);
+  font-weight: 700;
+}
+.flow-wrap img {
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+  object-fit: contain;
+}
+
+@keyframes textLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+footer .footer-txt {
+  padding-top: 100px;
+  text-align: center;
+}
+footer .footer-txt h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: 350px;
+  height: 60px;
+  line-height: 60px;
+  border: #fff solid 2px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  transition: 0.3s;
+}
+footer .footer-txt h3:hover {
+  transform: scale(0.95);
+  background-color: #fff;
+  color: var(--orange-color);
+}
+footer .footer-txt p {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}

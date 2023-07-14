@@ -35,7 +35,6 @@ let scroll = 0;
 
 $(window).on('scroll', (e) => {
   let pos = $(e.target).scrollTop();
-  console.log(pos);
 
   if (pos > scroll) {
     $('header').addClass('change_header');
@@ -58,7 +57,6 @@ $('.back_top').on('click', () => {
 //back to top
 $(window).on('scroll', (e) => {
   let pos = $(e.target).scrollTop();
-  console.log(pos);
 
   if (pos > scroll) {
     $('.back_top img ').addClass('change_daisy');
