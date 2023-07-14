@@ -1,10 +1,14 @@
 @charset "utf-8";
 
+/* Libre Baskerville */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
+
 :root {
-  --main-font: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui,
+  --main-font: 'NanumSquareRound', -apple-system, BlinkMacSystemFont, system-ui,
     Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR',
     'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     sans-serif;
+  --en-font: 'Libre Baskerville', Arial, Helvetica, sans-serif;
   --navy-color: #0d1f3d;
   --black-color: #222222;
   --green-color: #29c286;
@@ -20,12 +24,13 @@ img {
 
 body {
   font-family: var(--main-font);
+  font-weight: 600;
 }
 
 .title {
   font-size: 1.5rem;
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 700;
   text-align: left;
   margin-left: 3rem;
   padding-top: 80px;
@@ -41,6 +46,7 @@ header {
   top: 0px;
   z-index: 9999;
   transition: 0.5s;
+  font-family: var(--en-font);
 
   font-size: 1rem;
   display: grid;
@@ -220,6 +226,7 @@ header .gnb {
   height: 100vh;
   min-height: 800px;
   background-color: var(--green-color);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.2), #29c286 70%);
 }
 
 .ui-research .research-info {
@@ -228,8 +235,8 @@ header .gnb {
 
 .ui-research .research-info h3 {
   font-size: 2rem;
-  font-weight: 500;
   margin-top: 30px;
+  font-weight: 900;
 }
 .ui-research .research-info p {
   font-size: 1.25rem;
@@ -237,14 +244,14 @@ header .gnb {
 }
 .ui-research .research-main-info {
   display: flex;
-  width: 60vw;
+  width: 70vw;
   margin: 30px auto;
   justify-content: space-between;
 }
 
 .ui-research .research-main-info h3 {
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .ui-research .research-main-info h3 strong {
@@ -263,12 +270,377 @@ header .gnb {
   text-indent: 40px;
   line-height: 1.6;
 }
-.ui-research .original-design {
-  /* display: flex; */
-}
 .ui-research .original-design img {
   display: block;
   min-width: 800px;
   width: 45vw;
   margin: 0 auto;
+}
+
+/***** swot research *****/
+.swot-research {
+  width: 100%;
+  height: 100vh;
+  min-height: 800px;
+  background-color: var(--green-color);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.2), #29c286 70%);
+  position: relative;
+}
+
+.swot-research img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 25vw;
+  min-width: 400px;
+}
+
+/***** ux vision *****/
+.ux-vision {
+  width: 100%;
+  height: 100vh;
+  min-height: 800px;
+  background-color: var(--green-color);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.2), #29c286 70%);
+  text-align: center;
+}
+.ux-vision h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.ux-vision .vision {
+  font-size: 1.7rem;
+  line-height: 1.7;
+}
+.ux-vision .vision h2 {
+  background-color: var(--black-color);
+  color: #fff;
+  width: 230px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.ux-vision .vision h3 {
+  font-weight: 600;
+  padding-top: 10px;
+}
+.ux-vision img {
+  display: block;
+  margin: 30px auto;
+  animation: bounce 1s infinite ease-in-out alternate-reverse;
+}
+
+/***** design-keyword *****/
+.design-keyword {
+  width: 100%;
+  height: 60vh;
+  min-height: 500px;
+  background-color: var(--green-color);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.2), #29c286 70%);
+}
+.design-keyword .design-title p {
+  margin-left: 3rem;
+  margin-top: 10px;
+}
+
+.design-keyword .keyword {
+  margin-top: 100px;
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+}
+
+.design-keyword .keyword li {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  height: 150px;
+  border-radius: 100px;
+  background-color: #fff;
+  margin: 10px 0;
+  box-shadow: 20px 20px 12px rgba(64, 117, 80, 0.1),
+    11px 11px 10px rgba(64, 117, 80, 0.1), 5px 5px 7px rgba(64, 117, 80, 0.1),
+    1px 1px 4px rgba(64, 117, 80, 0.1);
+}
+
+.design-keyword .keyword li p {
+  font-size: 1.25rem;
+}
+.design-keyword .keyword li h1 {
+  font-size: 2.7rem;
+  font-weight: 900;
+}
+.design-keyword .keyword li h2 {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.design-keyword .keyword-info {
+  margin-top: 20px;
+  width: 100vw;
+  display: flex;
+  gap: 4%;
+  justify-content: center;
+}
+.design-keyword .keyword-info li {
+  text-align: center;
+  width: 400px;
+}
+
+/***** design-auide *****/
+.design-guide {
+  height: 100vh;
+}
+.design-guide .color-logo {
+  width: 80%;
+  margin: 50px auto;
+  margin-bottom: 20px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+}
+
+.design-guide .guide h3 {
+  color: var(--green-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.design-guide .guide p {
+  margin-left: 30px;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+.design-guide .color {
+  height: 35vh;
+}
+.design-guide .color .color-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.design-guide .color .color-list li {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 20px;
+}
+.design-guide .color .color-list li:nth-child(1) {
+  background-color: var(--green-color);
+  color: #fff;
+}
+
+.design-guide .color .color-list li:nth-child(2) {
+  background-color: #f5f6f7;
+  border: #ddd solid 2px;
+  color: #222222;
+}
+
+.design-guide .color .color-list li:nth-child(3) {
+  background-color: #dddddd;
+  color: #222222;
+}
+
+.design-guide .color .color-list li:nth-child(4) {
+  background-color: #777777;
+  color: #fff;
+}
+
+.design-guide .color .color-list li:nth-child(5) {
+  background-color: #222222;
+  color: #fff;
+}
+
+.design-guide .typo-icon {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.design-guide .logo {
+  height: 35vh;
+}
+.design-guide .logo .logo-list {
+  width: 25vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.design-guide .logo .logo-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: #777777;
+}
+
+.design-guide .typo-icon .typo img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.design-guide .typo-icon .icon img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/*****main design *****/
+.main-design .main-box {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.main-design .main-box img {
+  width: 45vw;
+  object-fit: cover;
+}
+
+.main-design .design h3 {
+  color: var(--green-color);
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.main-design .design h3 svg {
+  width: 30px;
+  height: 30px;
+  fill: var(--green-color);
+  margin: 0 5px;
+}
+.main-design .design h3 strong {
+  font-size: 1.2rem;
+  background-color: var(--green-color);
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  line-height: 30px;
+  text-align: center;
+}
+
+.main-design .design h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 30px 0;
+}
+.main-design .design h4 strong {
+  font-weight: 900;
+}
+.main-design .design p {
+  color: #5f5f5f;
+  line-height: 1.6;
+}
+.main-design .home {
+  margin-top: 80px;
+}
+.main-design .home-original {
+  width: 20vw;
+  margin-top: 150px;
+  position: relative;
+}
+.main-design .home-original h2 {
+  width: 20vw;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #ddd;
+}
+.main-design .home-original img {
+  width: 20vw;
+  margin-top: 30px;
+}
+.main-design .home-original p {
+  width: 140px;
+  margin: 20px auto;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: solid 1px #5f5f5f;
+  transition: 0.3s;
+}
+
+.main-design .home-original p:hover {
+  background-color: #5f5f5f;
+  color: #fff;
+}
+
+.main-design .main-detail img {
+  width: 60vw;
+  display: block;
+  margin: 50px auto;
+}
+
+.main-design .main-detail2 img {
+  width: 75vw;
+  display: block;
+  margin: 50px auto;
+}
+
+.main-design .main-detail3 img {
+  width: 75vw;
+  display: block;
+  margin: 50px auto;
+}
+
+.main-design .main-detail4 img {
+  width: 75vw;
+  display: block;
+  margin: 80px auto;
+}
+
+/*****detail design *****/
+.detail-design {
+  background-color: var(--green-color);
+}
+
+.detail-design img {
+  margin: 0 auto;
+  width: 100vw;
+}
+
+/***** view more *****/
+.view-more {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.view-more img {
+  width: 100%;
+}
+
+/***** footer *****/
+
+footer {
+  background-color: var(--green-color);
+  position: relative;
+  height: 30vh;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
