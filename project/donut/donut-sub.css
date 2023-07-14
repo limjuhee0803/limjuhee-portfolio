@@ -109,34 +109,34 @@ header .gnb {
 }
 
 .main .main-title {
+  width: 80%;
+  min-width: 50%;
   justify-content: center;
   display: flex;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 130px;
 }
 
-.main .main-design {
-  width: 60vw;
+.main .main-design img:nth-child(1) {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  margin: 200px auto;
-  padding-left: 100px;
-  transition: 0.3s;
+  margin: auto;
 }
-
-.main .main-design:hover {
-  transform: scale(0.95);
+.main .main-design img:nth-child(2) {
+  position: absolute;
+  right: 23vw;
+  bottom: 10vw;
 }
 
 .main .main-info {
   text-transform: capitalize;
   color: var(--navy-color);
   position: absolute;
-  bottom: 6vw;
-  left: 3vw;
+  bottom: 8vw;
+  left: 6vw;
 }
 
 .main-title {
