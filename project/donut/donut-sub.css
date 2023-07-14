@@ -122,8 +122,13 @@ header .gnb {
   right: 0;
   left: 0;
   bottom: 0;
-  margin: 230px auto;
+  margin: 200px auto;
   padding-left: 100px;
+  transition: 0.3s;
+}
+
+.main .main-design:hover {
+  transform: scale(0.95);
 }
 
 .main .main-info {
