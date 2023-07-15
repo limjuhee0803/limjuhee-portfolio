@@ -14,8 +14,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
 
     <!-- reset -->
     <link rel="stylesheet" href="../../common/minireset.min.css">
@@ -30,6 +28,8 @@
     <script src="../../common/jquery-3.7.0.min.js"></script>
     <!-- swiper -->
     <script src="../../common/swiper-bundle.min.js"></script>
+    <!-- 내가 작성한 js -->
+    <script defer src="./jeep.js"></script>
   </head>
   <body>
     <!-- header -->
@@ -64,31 +64,34 @@
         </svg>
       </a>
     </div>
-    <!-- main banner -->
-    <article class="main-banner">
-      <!-- <div class="main-img">
-        <img src="./images/main-banner.png" alt="메인배너 이미지">
-      </div> -->
-      <div class="main-txt">
-        <h1>모두가 열망하는 삶 <br>JEEP와 함께라면 가능합니다.</h1>
 
-        <h3>
-          사륜구동의 역사를 써온 자유와 모험의 아이콘 JEEP, <br>혁신을
-          거듭해오며 달려온 JEEP브랜드 히스토리를 소개합니다.
-        </h3>
-        <a href="#" class="more-btn">more view</a>
+    <!-- main-banner -->
+    <div class="main-banner event">
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg1">1
+            <div class="view-more">
+              view more
+            </div>
+          </div>
+
+          <div class="swiper-slide bg2">2
+            <div class="view-more">
+              view more
+            </div>
+          </div>
+          <div class="swiper-slide bg3">3
+            <div class="view-more">
+              view more
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
+    </div>
 
-      <div class="main-arrow arrow">
-        <svg viewBox="0 96 960 960">
-          <path d="M561 816 320 575l241-241 43 43-198 198 198 198-43 43Z">
-        </svg>
-
-        <svg viewBox="0 96 960 960">
-          <path d="m375 816-43-43 198-198-198-198 43-43 241 241-241 241Z">
-        </svg>
-      </div>
-    </article>
 
     <!-- contents -->
 
@@ -163,16 +166,6 @@
       <div class="best-model-img">
         <img src="./images/bestmodel-main.png" alt="베스트 모델 이미지1">
         <img src="./images/best-model-color.png" alt="컬러 선택">
-      </div>
-
-      <div class="best-model-arrow arrow">
-        <svg viewBox="0 96 960 960">
-          <path d="M561 816 320 575l241-241 43 43-198 198 198 198-43 43Z">
-        </svg>
-
-        <svg viewBox="0 96 960 960">
-          <path d="m375 816-43-43 198-198-198-198 43-43 241 241-241 241Z">
-        </svg>
       </div>
 
       <ul class="best-model-txt">

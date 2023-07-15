@@ -62,65 +62,57 @@ header .global-nav li:hover {
 
 /***** main banner *****/
 .main-banner {
-  background: url(./images/main-banner3.png) no-repeat 0 50% / cover;
   height: 100vh;
   width: 100%;
   min-width: 800px;
-
-  position: relative;
-  top: 5em;
-  overflow: hidden;
-  z-index: 999;
 }
-.main-banner .main-txt {
+
+.mySwiper1 {
+  background-color: #979797;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 9.375rem;
-  position: relative;
-  min-height: 800px;
-}
-.main-banner .main-txt h1 {
-  font-size: 3.125rem;
-  font-weight: 700;
-}
-.main-banner .main-txt h3 {
-  font-size: 1.2rem;
-  margin-top: 2rem;
+  overflow: hidden;
+
+  --swiper-theme-color: #fff;
+  --swiper-navigation-size: 2rem;
 }
 
-.main-banner .more-btn {
-  margin-top: 2rem;
-  text-transform: uppercase;
+.mySwiper1 .swiper-slide {
+  background: no-repeat 50% / cover;
 }
-.main-arrow svg {
-  width: 35px;
-  height: 35px;
-  fill: #fff;
-  background-color: rgba(255, 255, 255, 0.3);
+
+.mySwiper1 .bg1 {
+  background-image: url(./images/banner1.png);
+}
+
+.mySwiper1 .bg2 {
+  background-image: url(./images/banner2.png);
+}
+
+.mySwiper1 .bg3 {
+  background-image: url(./images/banner3.png);
+}
+
+.mySwiper1 .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  transition: 0.3s;
 }
 
-.main-arrow svg:nth-child(1) {
+.swiper-button-prev::after {
   position: absolute;
-  left: 1rem;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+  left: 50px;
 }
 
-.main-arrow svg:nth-child(2) {
+.swiper-button-next::after {
   position: absolute;
-  right: 1rem;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+  right: 50px;
 }
 
-.main-arrow svg:hover {
-  background-color: var(--point-color);
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  margin-bottom: 40px;
 }
 
 /* contents */
