@@ -113,11 +113,14 @@ header .gnb {
 
 .main .left-txt h1 {
   font-size: 2.5rem;
+  font-weight: 900;
   line-height: 1.6;
   margin: 30px 0 10px 0;
 }
 .main .left-txt h2 {
   font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 20px;
 }
 
 .main .left-txt .main-info {
@@ -161,6 +164,7 @@ header .gnb {
 .background .background-txt h1 {
   font-size: 2rem;
   padding-top: 150px;
+  font-weight: 700;
 }
 
 .background .background-txt p {
@@ -357,6 +361,7 @@ header .gnb {
 }
 
 .design-keyword .keyword li {
+  text-transform: capitalize;
   display: flex;
   gap: 10px;
   flex-direction: column;
@@ -396,7 +401,7 @@ header .gnb {
   width: 400px;
 }
 
-/***** design-auide *****/
+/***** design-guide *****/
 .design-guide {
   height: 100vh;
 }
@@ -620,10 +625,43 @@ header .gnb {
 .view-more {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 50vh;
+  color: #fff;
 }
 
-.view-more img {
-  width: 100%;
+.view-more .view-more1 {
+  background: url(./images/view-more1.png) no-repeat 50% / cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-more .more p {
+  font-size: 1.5rem;
+}
+
+.view-more .more a {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 20px;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  border: 2px solid #fff;
+  transition: 0.3s;
+}
+
+.view-more .more a:hover {
+  background-color: #fff;
+  color: var(--black-color);
+}
+.view-more .view-more2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(./images/view-more2.png) no-repeat 50% / cover;
 }
 
 /***** footer *****/
@@ -631,7 +669,7 @@ header .gnb {
 footer {
   background-color: var(--green-color);
   position: relative;
-  height: 30vh;
+  height: 20vh;
 }
 
 footer p {

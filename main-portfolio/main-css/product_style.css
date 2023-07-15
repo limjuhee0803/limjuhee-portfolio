@@ -8,7 +8,6 @@ body {
   width: 100%;
   position: relative;
   z-index: 1;
-  height: 50vh;
 }
 .menu--wrapper {
   counter-reset: count;
@@ -41,6 +40,8 @@ body {
 
 .menu--item figure img {
   width: 20vw;
+  max-width: 400px;
+  min-width: 200px;
   height: 100%;
   object-fit: contain;
 }
