@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+:root {
+  --font-size-13: 0.813rem;
+
+  --point-color: #f8bb0a;
+  --box-color: #262626;
+
+  --main-font-ko: "Noto Sans KR", Arial, Helvetica, sans-serif;
+  --main-font-en: "Roboto Flex", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+}
