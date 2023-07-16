@@ -301,6 +301,37 @@ header .gnb {
   width: 25vw;
   min-width: 400px;
 }
+.swot-research .swot-info {
+  height: 50vh;
+  margin-top: 100px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 100px;
+}
+.swot-research .swot-info li {
+  width: 22vw;
+}
+
+.swot-research .swot-info .swot-title h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  background-color: var(--black-color);
+  width: 250px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 40px;
+  color: var(--green-color);
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.swot-research .swot-info .swot-title .swot-detail li {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  text-indent: 30px;
+}
 
 /***** ux vision *****/
 .ux-vision {
@@ -311,6 +342,7 @@ header .gnb {
   background-image: radial-gradient(rgba(255, 255, 255, 0.2), #29c286 70%);
   text-align: center;
 }
+
 .ux-vision h1 {
   font-size: 2rem;
   font-weight: 500;
@@ -338,6 +370,8 @@ header .gnb {
   display: block;
   margin: 30px auto;
   animation: bounce 1s infinite ease-in-out alternate-reverse;
+  width: 50vw;
+  min-width: 600px;
 }
 
 /***** design-keyword *****/
@@ -404,6 +438,8 @@ header .gnb {
 /***** design-guide *****/
 .design-guide {
   height: 100vh;
+  min-height: 800px;
+  min-width: 900px;
 }
 .design-guide .color-logo {
   width: 80%;
