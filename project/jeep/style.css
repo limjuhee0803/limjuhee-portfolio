@@ -205,12 +205,11 @@ header .global-nav li:hover {
 
 .membership img {
   width: 90%;
-  min-width: 50vw;
+  min-width: 600px;
   object-fit: contain;
   position: relative;
-  left: -12vw;
+  left: -10vw;
   top: 5vw;
-  transition: 1.5s;
 }
 
 .membership-txt {
@@ -230,9 +229,6 @@ header .global-nav li:hover {
   margin-top: 2rem;
 }
 
-.membership img:hover {
-  transform: translateX(15vw);
-}
 
 /***** best-model *****/
 .best-model {
@@ -258,15 +254,16 @@ header .global-nav li:hover {
   width: 33.3333%;
   font-size: 1rem;
   transition: 0.3s;
-}
-
-.best-model .best-model-menu li:nth-child(1) {
-  background-color: var(--point-color);
   height: 3.75rem;
   line-height: 60px;
-  border-radius: 15px;
-  color: var(--box-color);
   font-weight: 700;
+  cursor: pointer;
+}
+
+.best-model .best-model-menu li.active {
+  background-color: var(--point-color);
+  color: var(--box-color);
+  border-radius: 15px;
 }
 
 .best-model .best-model-img {
@@ -281,71 +278,13 @@ header .global-nav li:hover {
   margin-top: 5rem;
 
 }
-.best-model .best-model-img img:last-child{
-  width: 25vw;
-}
-.best-model .best-model-img img:last-child {
-  position: absolute;
-  bottom: 10rem;
-}
-.best-model .best-model-arrow svg {
-  width: 35px;
-  height: 35px;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  transition: 0.3s;
-}
-.best-model .best-model-arrow svg:nth-child(1) {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  left: 20vw;
-}
-
-.best-model .best-model-arrow svg:nth-child(2) {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  right: 20vw;
-  transition: 0.3s;
-}
-
-.best-model .best-model-arrow svg:hover {
-  background-color: var(--point-color);
-  fill: var(--box-color);
-}
-
-.best-model .best-model-txt {
-  display: flex;
-  justify-content: center;
-  width: 90%;
-  margin: -5vw auto;
-}
-
-.best-model .best-model-txt li {
-  width: 25%;
-  border-right: solid #fff 1px;
-}
-
-.best-model .best-model-txt li:last-child {
-  border: none;
-}
-.best-model .best-model-txt h4 {
-  color: var(--point-color);
-  font-size: 1.125rem;
-  text-transform: uppercase;
-}
-
-.best-model .best-model-txt p {
-  font-weight: 700;
-  font-size: 2rem;
+.best-model .best-model-img img{
+  width: 50vw;
+  min-width: 600px;
 }
 
 /***** video *****/
 iframe {
-  margin-top: 10rem;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -400,10 +339,6 @@ iframe {
   bottom: 63%;
 }
 
-.service .service-txt li:last-child svg {
-  background-color: var(--point-color);
-  fill: var(--box-color);
-}
 
 /***** inquiry *****/
 .inquiry {
@@ -452,16 +387,13 @@ iframe {
   border: none;
 }
 
-/*****location *****/
-#map {
-  margin-top: 10%;
-}
 /***** footer *****/
 footer {
   background-color: #262626;
   display: flex;
   height: 150px;
   width: 100%;
+  margin-top: 100px;
 }
 .footer-txt {
   display: flex;
