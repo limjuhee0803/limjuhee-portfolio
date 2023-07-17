@@ -340,7 +340,7 @@ const waitForImages = () => {
   const loaderEl = document.querySelector('.loader span');
 
   gsap.set(cardsContainerEl.children, {
-    '--card-translateY-offset': '100vh',
+    '--card-translateY-offset': '0',
   });
   gsap.set(
     cardInfosContainerEl
