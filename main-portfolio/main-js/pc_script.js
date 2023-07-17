@@ -315,8 +315,8 @@ function init() {
         .querySelector('.current--info')
         .querySelectorAll('.text'),
       {
-        delay: 0.5,
-        duration: 0.4,
+        delay: 0.3,
+        duration: 0.2,
         stagger: 0.1,
         opacity: 1,
         translateY: 0,
@@ -347,7 +347,7 @@ const waitForImages = () => {
       .querySelector('.current--info')
       .querySelectorAll('.text'),
     {
-      translateY: '40px',
+      translateY: 0,
       opacity: 0,
     }
   );
