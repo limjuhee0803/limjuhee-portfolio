@@ -338,9 +338,10 @@ header .gnb {
   width: 100%;
   height: 100vh;
   min-height: 800px;
-  background-color: var(--green-color);
-  background-image: radial-gradient(rgba(255, 255, 255, 0.2), #29c286 70%);
+  background: url(./images/ux-vision-background.png) no-repeat 50% / cover;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .ux-vision h1 {
@@ -351,10 +352,12 @@ header .gnb {
 .ux-vision .vision {
   font-size: 1.7rem;
   line-height: 1.7;
+  margin-top: 30px;
 }
 .ux-vision .vision h2 {
-  background-color: var(--black-color);
-  color: #fff;
+  background-color: #fff;
+  color: var(--green-color);
+  font-weight: 700;
   width: 230px;
   height: 40px;
   line-height: 40px;
@@ -366,12 +369,14 @@ header .gnb {
   font-weight: 600;
   padding-top: 10px;
 }
-.ux-vision img {
+
+.ux-vision .vision-img img {
   display: block;
-  margin: 30px auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 60vw;
+  min-width: 400px;
   animation: bounce 1s infinite ease-in-out alternate-reverse;
-  width: 50vw;
-  min-width: 600px;
 }
 
 /***** design-keyword *****/
@@ -379,8 +384,6 @@ header .gnb {
   width: 100%;
   height: 60vh;
   min-height: 500px;
-  background-color: var(--green-color);
-  background-image: radial-gradient(rgba(255, 255, 255, 0.2), #29c286 70%);
 }
 .design-keyword .design-title p {
   margin-left: 3rem;
@@ -406,13 +409,14 @@ header .gnb {
   border-radius: 100px;
   background-color: #fff;
   margin: 10px 0;
-  box-shadow: 20px 20px 12px rgba(64, 117, 80, 0.1),
-    11px 11px 10px rgba(64, 117, 80, 0.1), 5px 5px 7px rgba(64, 117, 80, 0.1),
-    1px 1px 4px rgba(64, 117, 80, 0.1);
+  box-shadow: 20px 20px 12px rgba(83, 83, 83, 0.1),
+    11px 11px 10px rgba(88, 88, 88, 0.1), 5px 5px 7px rgba(100, 100, 100, 0.1),
+    1px 1px 4px rgba(92, 92, 92, 0.1);
 }
 
 .design-keyword .keyword li p {
   font-size: 1.25rem;
+  color: var(--green-color);
 }
 .design-keyword .keyword li h1 {
   font-size: 2.7rem;
@@ -651,7 +655,6 @@ header .gnb {
 .detail-design {
   background-color: var(--green-color);
 }
-
 .detail-design img {
   margin: 0 auto;
   width: 100vw;
@@ -684,13 +687,14 @@ header .gnb {
   width: 200px;
   height: 40px;
   line-height: 40px;
-  border: 2px solid #fff;
+  background-color: #fff;
+  color: var(--black-color);
   transition: 0.3s;
 }
 
 .view-more .more a:hover {
-  background-color: #fff;
-  color: var(--black-color);
+  color: var(--green-color);
+  border-radius: 40px;
 }
 .view-more .view-more2 {
   display: flex;
@@ -698,6 +702,13 @@ header .gnb {
   align-items: center;
   justify-content: center;
   background: url(./images/view-more2.png) no-repeat 50% / cover;
+}
+/***** dark mode *****/
+.dark-mode {
+  text-indent: -9999px;
+  height: 60vh;
+  min-height: 500px;
+  background: fixed url(./images/dark-mode.png) no-repeat 50% / cover;
 }
 
 /***** footer *****/
