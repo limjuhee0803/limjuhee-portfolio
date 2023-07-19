@@ -300,14 +300,7 @@ header .gnb {
   text-transform: capitalize;
   font-weight: 500;
 }
-.design .color {
-  /* margin-left: 10%;
-  display: flex;
-  width: 100vw;
-  gap: 5vw;
-  padding-bottom: 50px;
-  border-bottom: #ddd 2px solid; */
-}
+
 .design .color {
   margin-left: 10%;
   border-bottom: #ddd 2px solid;
