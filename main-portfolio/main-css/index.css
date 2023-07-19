@@ -79,7 +79,8 @@ header .gnb span {
 
 .web-design .web {
   display: flex;
-  margin-top: 50px;
+  position: relative;
+  bottom: 30px;
 }
 
 .web-design .web .web-list {
