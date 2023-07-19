@@ -392,13 +392,15 @@ header .gnb {
 }
 
 .section1-info .section1-image {
-  margin-left: 10vw;
   margin-top: 100px;
   display: flex;
+  justify-content: center;
   gap: 50px;
   -webkit-user-drag: none;
 }
-
+.section1-info .section1-image img {
+  width: 25vw;
+}
 /***** design keyword *****/
 .design-element .design-keyword,
 .design-element .color,
