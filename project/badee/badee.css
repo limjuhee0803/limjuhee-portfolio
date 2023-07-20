@@ -94,6 +94,7 @@ header .hambuger.change-hambuger {
   height: 60px;
   line-height: 60px;
   border-bottom: 1px solid #000;
+  cursor: pointer;
 }
 
 .menu menu li:hover {
