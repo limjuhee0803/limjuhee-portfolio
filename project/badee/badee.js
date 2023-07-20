@@ -57,5 +57,12 @@ addEventListener('mousemove', (evt) => {
 // 내 포트폴리오 바로가기
 
 $('.footer-butterfly').on('click', () => {
-  $('.portfolio').toggleClass('active-portfolio');
+  $('.footer-butterfly').addClass('active-portfolio');
+});
+
+$('.footer-butterfly.active-portfolio').on('click', () => {
+  $('.footer-butterfly.active-portfolio').attr(
+    'href',
+    'https://limjuhee0803.github.io/limjuhee-portfolio/index.html'
+  );
 });
