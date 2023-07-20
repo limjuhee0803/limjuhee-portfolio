@@ -125,6 +125,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 4fr;
     padding-top: 80px;
+    align-items: end;
   }
   .main .main-text h1 {
     font-size: 3rem;
@@ -133,7 +134,11 @@ header {
     color: var(--navy-color);
     text-transform: capitalize;
   }
-
+  .main .main-text h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-variant: var(--navy-color);
+  }
   .main .main-project {
     display: flex;
     justify-content: center;
@@ -143,7 +148,7 @@ header {
 
   .main .main-project .project {
     width: 22vw;
-    height: 400px;
+    height: 300px;
     background-color: #fff;
     border: var(--navy-color) 1px solid;
     position: relative;
@@ -166,7 +171,21 @@ header {
   }
   .main .main-project .project img {
     display: block;
-    margin: 20px auto;
+    margin: 30px auto;
+  }
+  .main .main-project .project1 {
+    position: relative;
+    bottom: -30px;
+  }
+
+  .main .main-project .project2 {
+    position: relative;
+    top: -20px;
+  }
+
+  .main .main-project .project3 {
+    position: relative;
+    bottom: -100px;
   }
 /***** main *****/
   .modelling{
@@ -195,9 +214,48 @@ header {
     bottom: 0;
   }
 
+  .modelling h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--en-font);
+    text-align: center;
+    padding-top: 100px;
+    color: var(--navy-color);
+    width: 85vw;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--navy-color);
+  }
+
+  .modelling .modelling-project {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 100px;
+  }
+
+  .modelling .modelling-project p {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    color: var(--navy-color);
+    margin: 20px 0;
+  }
   /***** footer *****/
   footer {
     width: 100vw;
     height: 20vh;
-    background-color: var(--navy-color);
+    background: url(./images/blue_paper.png) no-repeat 50% / cover;
+    position: relative;
+  }
+
+  footer p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 30px;
+    text-align: center;
+    color: #fff;
   }
