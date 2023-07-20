@@ -29,6 +29,13 @@ $('.up').on('click', () => {
   });
 });
 
+$('.up').on('click', () => {
+  scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
+
 // banner 마우스 이벤트
 
 const img1 = document.querySelector('.item1');
@@ -45,4 +52,10 @@ addEventListener('mousemove', (evt) => {
   img2.style.transform = `translate(${x / -50}px,${-y / 100 + 10}px)`;
   img3.style.transform = `translate(${30 - x / 60}px,${-y / 50}px)`;
   img4.style.transform = `translate(${50 - x / 80}px,${-y / 20}px)`;
+});
+
+// 내 포트폴리오 바로가기
+
+$('.footer-butterfly').on('click', () => {
+  $('.portfolio').toggleClass('active-portfolio');
 });
