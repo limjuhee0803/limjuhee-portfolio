@@ -35,6 +35,9 @@ header .header-icon li {
   place-items: center;
   cursor: pointer;
 }
+header .header-icon li:hover {
+  transform: translateY(-5px);
+}
 header p {
   width: 200px;
   height: 50px;
@@ -147,6 +150,7 @@ header .hambuger.change-hambuger {
 .main-white .banner-item img {
   position: absolute;
 }
+
 .main-white .banner-item img:nth-child(1) {
   top: 0;
   left: 0;
