@@ -478,7 +478,7 @@ header .hambuger.change-hambuger {
   position: absolute;
   z-index: 99;
   bottom: -999px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .section3 .lookbook:hover img,
 .section3 .notice:hover img {
