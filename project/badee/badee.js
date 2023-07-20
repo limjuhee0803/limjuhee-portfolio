@@ -61,7 +61,7 @@ $('.footer-butterfly').on('click', () => {
 });
 
 $('.footer-butterfly.active-portfolio').on('click', () => {
-  $('.footer-butterfly.active-portfolio').attr(
+  $(location).attr(
     'href',
     'https://limjuhee0803.github.io/limjuhee-portfolio/index.html'
   );
