@@ -140,7 +140,30 @@ header .hambuger.change-hambuger {
   z-index: 999;
   height: 80vh;
   min-height: 600px;
-  background: url(./images/banner-item.png) no-repeat 50% / cover;
+  background-color: #fff;
+  overflow: hidden;
+  /* background: url(./images/banner-item.png) no-repeat 50% / cover; */
+}
+.main-white .banner-item img {
+  position: absolute;
+}
+.main-white .banner-item img:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.main-white .banner-item img:nth-child(2) {
+  bottom: 0;
+  right: 0;
+}
+
+.main-white .banner-item img:nth-child(3) {
+  top: -50px;
+  right: 100px;
+}
+
+.main-white .banner-item img:nth-child(4) {
+  bottom: -50px;
+  left: 100px;
 }
 .main-banner .main-white p {
   text-align: center;
@@ -172,7 +195,6 @@ header .hambuger.change-hambuger {
   min-height: 600px;
   background: url(./images/banner-img.png) no-repeat 60% / cover;
 }
-
 /* 텍스트 글리치 효과 */
 .glitch-wrapper {
   width: 100%;
