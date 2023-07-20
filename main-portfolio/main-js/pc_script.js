@@ -470,6 +470,25 @@ $('.web-list li')
     }
   );
 
+$('.web-list li')
+  .eq(4)
+  .hover(
+    (e) => {
+      let idx = $(this).index();
+      $('.web-img img').attr({
+        src: `./main-portfolio/main-images/web-project5.png`,
+        alt: 'project2',
+      });
+    },
+    (e) => {
+      let idx = $(this).index();
+      $('.web-img img').attr({
+        src: `./main-portfolio/main-images/web-project1.png`,
+        alt: 'project2',
+      });
+    }
+  );
+
 /* 네비 바 클릭 시 해당 페이지로 이동 */
 
 $('.gnb li')
