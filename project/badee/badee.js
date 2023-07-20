@@ -14,19 +14,17 @@ $(window).on('scroll', (e) => {
 //menu
 $('.hambuger').on('click', () => {
   $('.menu').toggleClass('change-menu');
-  $('.hambuger img').attr({src: `./images/hambuger2.png`,alt: 'hambuger2',
-  });
+  $('.hambuger').toggleClass('change-hambuger');
 });
-
 
 //back to top
 $('a[href="#"]').on('click', (evt) => {
-    evt.preventDefault();
+  evt.preventDefault();
+});
+
+$('.up').on('click', () => {
+  scrollTo({
+    top: 0,
+    behavior: 'smooth',
   });
-  
-  $('.up').on('click', () => {
-    scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  });
+});
