@@ -183,7 +183,7 @@ header .hambuger.change-hambuger {
   min-width: 500px;
 }
 .main-banner .main-white .logo-main:hover {
-  transform: translateY(-10px);
+  transform: translateY(10px);
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 }
 .main-banner .main-banner-img {
