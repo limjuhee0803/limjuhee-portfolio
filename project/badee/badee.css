@@ -57,6 +57,7 @@ header .hambuger {
   text-indent: -9999px;
   margin-left: 50px;
   background: url(./images/hambuger.png) no-repeat 50% / contain;
+  cursor: pointer;
 }
 
 header .hambuger.change-hambuger {
@@ -83,6 +84,7 @@ header .hambuger.change-hambuger {
 }
 
 .menu menu li {
+  text-indent: 20px;
   font-size: 1.25rem;
   height: 60px;
   line-height: 60px;
