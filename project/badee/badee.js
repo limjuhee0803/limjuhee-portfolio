@@ -55,13 +55,23 @@ addEventListener('mousemove', (evt) => {
 });
 
 // 내 포트폴리오 바로가기
-
+/*
 $('.footer-butterfly').on('click', () => {
   $('.footer-butterfly').addClass('active-portfolio');
 });
+*/
+
+$('.footer-butterfly').hover(
+    (e) => {
+      $('.footer-butterfly').addClass('active-portfolio');
+    },
+    (e) => {
+      $('.footer-butterfly').removeClass('active-portfolio');
+    }
+  );
 
 $('.footer-butterfly.active-portfolio').on('click', () => {
-  $(location).attr(
+  $('.footer-butterfly.active-portfolio').attr(
     'href',
     'https://limjuhee0803.github.io/limjuhee-portfolio/index.html'
   );

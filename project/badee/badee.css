@@ -600,7 +600,8 @@ footer .footer-center h4 {
   margin-top: 20px;
   margin-bottom: 30px;
 }
-footer .footer-center .footer-butterfly {
+footer .footer-center .footer-butterfly{
+  display: block;
   background: url(./images/butterfly.png) no-repeat 50% / cover;
   width: 200px;
   height: 150px;
@@ -609,6 +610,7 @@ footer .footer-center .footer-butterfly {
   animation: bounce 1s infinite ease-in-out alternate-reverse;
   cursor: pointer;
   position: relative;
+  transition: 0.3s;
 }
 
 footer .footer-center .footer-butterfly.active-portfolio {
