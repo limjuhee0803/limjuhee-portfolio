@@ -105,6 +105,8 @@ $('.collection .btn1').on('click', () => {
   $('.collection .btn6').removeClass('active');
   $('.collection .btn7').removeClass('active');
   $('.collection .btn8').removeClass('active');
+
+  $('.lookbook h1 strong').text('23SS');
 });
 // 버튼2
 $('.collection .btn2').on('click', () => {
@@ -170,6 +172,8 @@ $('.collection .btn2').on('click', () => {
   $('.collection .btn6').removeClass('active');
   $('.collection .btn7').removeClass('active');
   $('.collection .btn8').removeClass('active');
+
+  $('.lookbook h1 strong').text('23SS');
 });
 
 // 버튼3
@@ -236,6 +240,8 @@ $('.collection .btn3').on('click', () => {
   $('.collection .btn6').removeClass('active');
   $('.collection .btn7').removeClass('active');
   $('.collection .btn8').removeClass('active');
+
+  $('.lookbook h1 strong').text('21HS');
 });
 
 // 버튼4
@@ -302,6 +308,8 @@ $('.collection .btn4').on('click', () => {
   $('.collection .btn6').removeClass('active');
   $('.collection .btn7').removeClass('active');
   $('.collection .btn8').removeClass('active');
+
+  $('.lookbook h1 strong').text('20FW');
 });
 
 // 버튼5
@@ -368,6 +376,8 @@ $('.collection .btn5').on('click', () => {
   $('.collection .btn6').removeClass('active');
   $('.collection .btn7').removeClass('active');
   $('.collection .btn8').removeClass('active');
+
+  $('.lookbook h1 strong').text('23HS');
 });
 
 // 버튼6
@@ -434,6 +444,8 @@ $('.collection .btn6').on('click', () => {
   $('.collection .btn5').removeClass('active');
   $('.collection .btn7').removeClass('active');
   $('.collection .btn8').removeClass('active');
+
+  $('.lookbook h1 strong').text('20SS');
 });
 
 // 버튼7
@@ -500,6 +512,8 @@ $('.collection .btn7').on('click', () => {
   $('.collection .btn5').removeClass('active');
   $('.collection .btn6').removeClass('active');
   $('.collection .btn8').removeClass('active');
+
+  $('.lookbook h1 strong').text('19FW');
 });
 
 // 버튼8
@@ -566,4 +580,35 @@ $('.collection .btn8').on('click', () => {
   $('.collection .btn5').removeClass('active');
   $('.collection .btn6').removeClass('active');
   $('.collection .btn7').removeClass('active');
+
+  $('.lookbook h1 strong').text('19SS');
 });
+
+//header
+let prevScroll = window.scrollY;
+
+$(window).on('scroll', () => {
+  let currentScroll = window.scrollY;
+
+  if (prevScroll > currentScroll) {
+    $('header').css({ top: 0 });
+  } else {
+    $('header').css({ top: -100 });
+  }
+
+  prevScroll = currentScroll;
+  console.log('prevScroll:', prevScroll);
+});
+
+//collecton 이벤트
+/*
+$(window).on('scroll', () => {
+  const topbox = $('.collection-box').offset().top;
+
+  if (scrollY > topbox) {
+    $('.collection-box').addClass('active-box');
+  } else {
+    $('.collection-box').removeClass('active-box');
+  }
+});
+*/
