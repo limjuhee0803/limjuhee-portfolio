@@ -4,7 +4,7 @@
 header {
   position: fixed;
   z-index: 9999;
-  top: -70px;
+  top: 0;
   display: flex;
   align-items: center;
   width: 100%;
@@ -16,9 +16,7 @@ header {
   transition: 0.3s;
   text-transform: uppercase;
 }
-header.change_header {
-  top: 0;
-}
+
 header .header-logo {
   width: 150px;
 }
@@ -56,14 +54,14 @@ header .headerP {
   border-right: none;
   margin-left: 50px;
 }
+
 header .hambuger {
-  background-color: #ddd;
   width: 40px;
   height: 40px;
   text-indent: -9999px;
-  margin-left: 50px;
   background: url(./images/hambuger.png) no-repeat 50% / contain;
   cursor: pointer;
+  margin: 0 30px;
 }
 
 header .hambuger.change-hambuger {

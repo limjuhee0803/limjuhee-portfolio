@@ -54,14 +54,14 @@ header .headerP {
   border-right: none;
   margin-left: 50px;
 }
+
 header .hambuger {
-  background-color: #ddd;
   width: 40px;
   height: 40px;
   text-indent: -9999px;
-  margin-left: 50px;
   background: url(./images/hambuger.png) no-repeat 50% / contain;
   cursor: pointer;
+  margin: 0 30px;
 }
 
 header .hambuger.change-hambuger {
