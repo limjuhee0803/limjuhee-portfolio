@@ -270,7 +270,7 @@ header .gnb {
 }
 .project-detail .detail-top h2 {
   color: var(--navy-color);
-  font-size: 3.4rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 .project-detail .detail-top h3 {
@@ -279,9 +279,8 @@ header .gnb {
 }
 .project-detail .detail-top ul {
   margin-top: 30px;
-  font-size: 1.25rem;
   list-style: disc;
-  margin-left: 40px;
+  margin-left: 5dvh;
   line-height: 1.7;
   color: var(--navy-color);
 }
@@ -295,7 +294,7 @@ header .gnb {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: 50px;
   gap: 10px;
   width: 30vw;
 }
@@ -303,7 +302,7 @@ header .gnb {
 .project-detail .keyword li {
   border: 2px solid var(--navy-color);
   color: var(--navy-color);
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   padding: 2px 30px;
   border-radius: 50px;
   margin-right: 10px;
