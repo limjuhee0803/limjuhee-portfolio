@@ -16,13 +16,6 @@ $('.up').on('click', () => {
   });
 });
 
-$('.up').on('click', () => {
-  scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  });
-});
-
 // 내 포트폴리오 바로가기
 $('.footer-butterfly').hover(
   (e) => {

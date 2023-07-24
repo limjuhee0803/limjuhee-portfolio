@@ -263,7 +263,24 @@ header .hambuger.change-hambuger {
   display: block;
   margin: 100px auto;
 }
-
+.detail .detail-box {
+  width: 80vw;
+  min-width: 600px;
+  height: 35vh;
+  min-height: 200px;
+  margin: 0 auto;
+  background: fixed url(./images/detail-banner.png) no-repeat 50% / contain;
+}
+.detail .detail-box img {
+  padding-top: 80px;
+  margin-bottom: 30px;
+}
+.detail .detail-box p {
+  text-align: center;
+  color: #fff;
+  font-family: var(--kr-font);
+  line-height: 1.7;
+}
 /***** footer *****/
 
 footer {

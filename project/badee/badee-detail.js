@@ -69,3 +69,15 @@ $('.main-lf img').hover(
     });
   }
 );
+
+//back to top
+$('a[href="#"]').on('click', (evt) => {
+  evt.preventDefault();
+});
+
+$('.up').on('click', () => {
+  scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
