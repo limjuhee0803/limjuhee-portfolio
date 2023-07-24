@@ -41,19 +41,6 @@ $('.main-rt .size > p').on('click', () => {
   $('.main-rt .size > p').toggleClass('active-size');
 });
 
-// buy 버튼 클릭
-$('.buy-box li')
-  .eq(1)
-  .on('click', () => {
-    $('.buy-box li').eq(1).toggleClass('active-box');
-  });
-
-$('.buy-box li')
-  .eq(2)
-  .on('click', () => {
-    $('.buy-box li').eq(2).toggleClass('active-box');
-  });
-
 //hover 시 메인 이미지 변경
 $('.main-lf img').hover(
   (e) => {
@@ -80,4 +67,10 @@ $('.up').on('click', () => {
     top: 0,
     behavior: 'smooth',
   });
+});
+
+//product 슬라이드
+$('.product').on('click', () => {
+  $('.product svg').toggleClass('active-product');
+  $('.product-info').toggleClass('active-info');
 });

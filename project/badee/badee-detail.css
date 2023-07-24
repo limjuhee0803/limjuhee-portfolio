@@ -181,16 +181,24 @@ header .hambuger.change-hambuger {
   margin-top: 10px;
   width: 200px;
   text-align: center;
-  line-height: 30px;
-  height: 30px;
-  background-color: #e6e6e6;
+  line-height: 40px;
+  height: 40px;
+  border: 1px solid #e6e6e6;
   cursor: pointer;
+  transition: 0.3s;
 }
-.main-rt .buy-box li.active-box {
+.main-rt .buy-box li:nth-child(1) {
   background-color: #000;
   color: #fff;
 }
 
+.main-rt .buy-box li:nth-child(2):hover {
+  background-color: #e6e6e6;
+}
+
+.main-rt .buy-box li:nth-child(3):hover {
+  background-color: #e6e6e6;
+}
 .main-rt .info {
   width: 33vw;
   color: #5c5c5c;
@@ -198,10 +206,39 @@ header .hambuger.change-hambuger {
   border-bottom: 1px solid #5c5c5c;
   margin-top: 20px;
 }
-
-.main-rt .info h3 {
+.main-rt .info section {
+  display: flex;
+  cursor: pointer;
+}
+.main-rt .info section svg {
+  width: 30px;
+  height: 30px;
+  fill: #5c5c5c;
+}
+.main-rt .info section h3 {
   font-size: 1rem;
   margin: 5px 0;
+  width: 32vw;
+}
+.main-rt .info .product {
+  position: relative;
+}
+.main-rt .info .product svg {
+  transition: 0.3s;
+}
+.main-rt .info .product svg.active-product {
+  transform: rotate(90deg);
+}
+.main-rt .info .product-info {
+  margin-left: 30px;
+  line-height: 1.7;
+  font-size: 0.6rem;
+  height: 60px;
+  text-transform: capitalize;
+  display: none;
+}
+.main-rt .info .product-info.active-info {
+  display: block;
 }
 
 .main-rt .color {
