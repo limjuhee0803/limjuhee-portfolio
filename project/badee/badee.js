@@ -1,14 +1,17 @@
 //header
-let scroll = 0;
+let prevScroll = window.scrollY;
 
-$(window).on('scroll', (e) => {
-  let pos = $(e.target).scrollTop();
+$(window).on('scroll', () => {
+  let currentScroll = window.scrollY;
 
-  if (pos > scroll) {
-    $('header').addClass('change_header');
+  if (prevScroll > currentScroll) {
+    $('header').css({ top: 0 });
   } else {
-    $('header').removeClass('change_header');
+    $('header').css({ top: -100 });
   }
+
+  prevScroll = currentScroll;
+  console.log('prevScroll:', prevScroll);
 });
 
 //menu
@@ -62,13 +65,13 @@ $('.footer-butterfly').on('click', () => {
 */
 
 $('.footer-butterfly').hover(
-    (e) => {
-      $('.footer-butterfly').addClass('active-portfolio');
-    },
-    (e) => {
-      $('.footer-butterfly').removeClass('active-portfolio');
-    }
-  );
+  (e) => {
+    $('.footer-butterfly').addClass('active-portfolio');
+  },
+  (e) => {
+    $('.footer-butterfly').removeClass('active-portfolio');
+  }
+);
 
 $('.footer-butterfly.active-portfolio').on('click', () => {
   $('.footer-butterfly.active-portfolio').attr(

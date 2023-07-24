@@ -1,297 +1,299 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>jeep</title>
-    <!-- open graph -->
-    <meta property="og:title" content="Jeep Redesign">
-    <meta property="og:description" content="Jeep 사이트 리디자인 이벤트 페이지입니다.">
-    <meta property="og:image" content="./images/open-graph.png">
-    <meta property="og:url" content="https://limjuhee0803.github.io/limjuhee-portfolio/project/jeep/jeep.html">
 
-    <!-- favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>jeep</title>
+  <!-- open graph -->
+  <meta property="og:title" content="Jeep Redesign">
+  <meta property="og:description" content="Jeep 사이트 리디자인 이벤트 페이지입니다.">
+  <meta property="og:image" content="./images/open-graph.png">
+  <meta property="og:url" content="https://limjuhee0803.github.io/limjuhee-portfolio/project/jeep/jeep.html">
 
-    <!-- reset -->
-    <link rel="stylesheet" href="../../common/minireset.min.css">
-    <!-- common -->
-    <link rel="stylesheet" href="./common.css">
-    <!-- swiper -->
-    <link rel="stylesheet" href="../../common/swiper-bundle.min.css">
-    <!-- style -->
-    <link rel="stylesheet" href="./style.css">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-    <!-- jQuery -->
-    <script src="../../common/jquery-3.7.0.min.js"></script>
-    <!-- swiper -->
-    <script src="../../common/swiper-bundle.min.js"></script>
-    <!-- 내가 작성한 js -->
-    <script defer src="./jeep.js"></script>
-  </head>
-  <body>
-    <!-- header -->
-    <header>
-      <div class="header-wrapper">
-        <img src="./images/logo.png" alt="jeep 로고">
-        <menu class="global-nav">
-          <li>모델소개</li>
-          <li>구입문의</li>
-          <li>주행성능</li>
-          <li>JEEP LIFE</li>
-          <li>서비스</li>
-        </menu>
+  <!-- reset -->
+  <link rel="stylesheet" href="../../common/minireset.min.css">
+  <!-- common -->
+  <link rel="stylesheet" href="./common.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="../../common/swiper-bundle.min.css">
+  <!-- style -->
+  <link rel="stylesheet" href="./style.css">
 
-        <ul class="global-utill">
-          <li>login</li>
-          <li>join</li>
-        </ul>
+  <!-- jQuery -->
+  <script src="../../common/jquery-3.7.0.min.js"></script>
+  <!-- swiper -->
+  <script src="../../common/swiper-bundle.min.js"></script>
+  <!-- 내가 작성한 js -->
+  <script defer src="./jeep.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="header-wrapper">
+      <img src="./images/logo.png" alt="jeep 로고">
+      <menu class="global-nav">
+        <li>모델소개</li>
+        <li>구입문의</li>
+        <li>주행성능</li>
+        <li>JEEP LIFE</li>
+        <li>서비스</li>
+      </menu>
+
+      <ul class="global-utill">
+        <li>login</li>
+        <li>join</li>
+      </ul>
+    </div>
+
+  </header>
+
+  <!-- sticky -->
+  <div class="up">
+    <a href="#">
+      <svg viewBox="0 96 960 960">
+        <path d="M450 896V370L202 618l-42-42 320-320 320 320-42 42-248-248v526h-60Z" />
+      </svg>
+    </a>
+  </div>
+
+  <!-- main-banner -->
+  <div class="main-banner event">
+    <div class="swiper mySwiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg1">1
+          <div class="view-more">
+            view more
+          </div>
+        </div>
+
+        <div class="swiper-slide bg2">2
+          <div class="view-more">
+            view more
+          </div>
+        </div>
+        <div class="swiper-slide bg3">3
+          <div class="view-more">
+            view more
+          </div>
+        </div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
 
-    </header>
 
-    <!-- sticky -->
-    <div class="up">
-      <a href="#">
-        <svg viewBox="0 96 960 960">
-          <path
-            d="M450 896V370L202 618l-42-42 320-320 320 320-42 42-248-248v526h-60Z"
-          />
+  <!-- contents -->
+
+  <!-- promotion -->
+  <article class="promotion">
+    <div class="promotion-img">
+      <img src="./images/promotion.png" alt="프로모션용 jeep 이미지">
+    </div>
+
+    <div class="promotion-txt">
+      <h2>promotion</h2>
+      <h3>
+        Jeep의 인기 모델들인 GRAND CHEROKEE, WRANGLER,GLADIATOR를
+        <span>36개월 무이자 할부 + 특별 추가 할인 + 최대 5년 / 거리 무제한
+          연장보증 등</span>
+        트리플 혜택으로 즐겨보세요.
+      </h3>
+
+      <div class="promotion-btn">
+        <a href="#" class="more-btn"> 자세히 보기</a>
+        <a href="#" class="more-btn"> 시승신청</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- branding -->
+  <article class="branding">
+    <div class="branding-txt">
+      <h2>branding</h2>
+      <h3>
+        Jeep의 전설적인 라인업을 자세히 알아보고, "Go Anywhere. Do Anithing"을
+        단순한 슬로건이 아닌 하나의 삶의 방식임을 떠올리며 세월이 흘러도
+        변하지 않을 당신만의 스토리를 만들어 보세요.
+      </h3>
+
+      <a href="#" class="more-btn">자세히 보기</a>
+    </div>
+
+    <div class="branding-img">
+      <img src="./images/branding-1.png" alt="브랜딩 이미지1">
+      <img src="./images/branding-2.png" alt="브랜딩 이미지2">
+      <img src="./images/branding-3.png" alt="브랜딩 이미지3">
+      <img src="./images/branding-4.png" alt="브랜딩 이미지4">
+    </div>
+
+  </article>
+
+  <!-- membership -->
+  <article class="membership">
+    <img src="./images/membership1.png" alt="멤버쉽이미지">
+    <div class="membership-txt">
+      <h2>membership</h2>
+      <h3>
+        Jeep Owner만이 경험할 수 있는, 익스트림한 이벤트들과 여러가지 혜택이
+        제공되는 Jeep Owner전용 멤버십 프로그램에 지금 가입하세요.
+      </h3>
+      <a href="#" class="more-btn">자세히 보기</a>
+    </div>
+  </article>
+
+  <!-- best-model -->
+  <article class="best-model">
+    <h2>best model</h2>
+    <ul class="best-model-menu">
+      <li class="btn1 active">wrangler</li>
+      <li class="btn2">gladiator</li>
+      <li class="btn3">grand cherokee</li>
+    </ul>
+
+    <div class="best-model-img">
+      <img src="./images/bestmodel1.png" alt="베스트 모델 이미지1">
+    </div>
+  </article>
+
+  <!-- video -->
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/7RHG7rmzV1o?controls=0&loop=1&autoplay=1&amp;playlist=7RHG7rmzV1o&amp;loop=0 &mute=1&modestbranding=1"
+    title="YouTube video player" class="youtube" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+
+  <!-- jeep korea service -->
+  <article class="service">
+    <h2>jeep korea service</h2>
+
+    <ul class="service-txt">
+      <li>
+        <img src="./images/service1-1.png" alt="시승신청 이미지">
+        <h5>시승신청</h5>
+        <p>jeep의 다양한 모델들을 자유롭게 시승해보세요.</p>
+
+        <svg viewBox="0 96 960 960" class="add">
+          <path d="M450 856V606H200v-60h250V296h60v250h250v60H510v250h-60Z">
         </svg>
-      </a>
+      </li>
+
+      <li>
+        <img src="./images/service2-1.png" alt="jeep life 이미지">
+        <h5>jeep life</h5>
+        <p>jeep의 다양한 이야기들을 만나보세요.</p>
+
+        <svg viewBox="0 96 960 960" class="add">
+          <path d="M450 856V606H200v-60h250V296h60v250h250v60H510v250h-60Z">
+        </svg>
+      </li>
+
+      <li>
+        <img src="./images/service3-2.png" alt="전시장 이미지">
+        <h5>전시장/서비스 센터</h5>
+        <p>전국에 있는 전시장과 서비스 센터를 찾아보세요.</p>
+
+        <svg viewBox="0 96 960 960" class="add">
+          <path d="M450 856V606H200v-60h250V296h60v250h250v60H510v250h-60Z">
+        </svg>
+      </li>
+    </ul>
+  </article>
+
+  <!-- inquiry -->
+  <article class="inquiry">
+    <div class="inquiry-txt">
+      <h2>inquiry</h2>
+      <p>궁금한 사항은 언제든 자유롭게 문의하세요.</p>
     </div>
 
-    <!-- main-banner -->
-    <div class="main-banner event">
-      <div class="swiper mySwiper1">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide bg1">1
-            <div class="view-more">
-              view more
-            </div>
-          </div>
+    <div class="inquiry-form">
+      <form>
+        <section>
+          <p>이름</p>
+          <input type="username" name="userName">
+        </section>
 
-          <div class="swiper-slide bg2">2
-            <div class="view-more">
-              view more
-            </div>
-          </div>
-          <div class="swiper-slide bg3">3
-            <div class="view-more">
-              view more
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
+        <section>
+          <p>연락처</p>
+          <input type="tel" name="userTel">
+        </section>
+
+        <section>
+          <p>이메일</p>
+          <input type="email" name="userEmail">
+        </section>
+
+        <section>
+          <p>문의사항</p>
+          <input type="text" name="userText">
+        </section>
+
+        <button type="submit">개인정보 동의 후 전송</button>
+      </form>
+    </div>
+  </article>
+
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-txt">
+      <p>
+        ©2022 Stellantis. All Rights Reserved.
+        <br>Chrysler, Jeep 및 FIAT 로고는
+        Stellantis의 등록 상표입니다.
+      </p>
     </div>
 
+    <ul class="footer-icon">
+      <li>
+        <a href="https://www.instagram.com/jeep/"><img src="./images/footer1-instagram.png" alt="인스타그램"></a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/JeepKorea/?locale=ko_KR"><img src="./images/footer2-facebook.png"
+            alt="페이스북"></a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/jeepkorea"><img src="./images/footer3-youtube.png" alt="유튜브"></a>
+      </li>
+    </ul>
+  </footer>
 
-    <!-- contents -->
+</body>
 
-    <!-- promotion -->
-    <article class="promotion">
-      <div class="promotion-img">
-        <img src="./images/promotion.png" alt="프로모션용 jeep 이미지">
-      </div>
+<script>
+  const mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = {
+      center: new kakao.maps.LatLng(37.2683, 127.0005), // 지도의 중심좌표
+      level: 3, // 지도의 확대 레벨
+      mapTypeId: kakao.maps.MapTypeId.ROADMAP // 지도종류
+    };
 
-      <div class="promotion-txt">
-        <h2>promotion</h2>
-        <h3>
-          Jeep의 인기 모델들인 GRAND CHEROKEE, WRANGLER,GLADIATOR를
-          <span
-            >36개월 무이자 할부 + 특별 추가 할인 + 최대 5년 / 거리 무제한
-            연장보증 등</span
-          >
-          트리플 혜택으로 즐겨보세요.
-        </h3>
+  // 지도를 생성한다 
+  const map = new kakao.maps.Map(mapContainer, mapOption);
 
-        <div class="promotion-btn">
-          <a href="#" class="more-btn"> 자세히 보기</a>
-          <a href="#" class="more-btn"> 시승신청</a>
-        </div>
-      </div>
-    </article>
+  // 마우스 휠과 모바일 터치를 이용한 지도 확대, 축소를 막는다
+  map.setZoomable(false);
 
-    <!-- branding -->
-    <article class="branding">
-      <div class="branding-txt">
-        <h2>branding</h2>
-        <h3>
-          Jeep의 전설적인 라인업을 자세히 알아보고, "Go Anywhere. Do Anithing"을
-          단순한 슬로건이 아닌 하나의 삶의 방식임을 떠올리며 세월이 흘러도
-          변하지 않을 당신만의 스토리를 만들어 보세요.
-        </h3>
+  // 지도에 확대 축소 컨트롤을 생성한다
+  const zoomControl = new kakao.maps.ZoomControl();
 
-        <a href="#" class="more-btn">자세히 보기</a>
-      </div>
+  // 지도의 우측에 확대 축소 컨트롤을 추가한다
+  map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
-      <div class="branding-img">
-        <img src="./images/branding-1.png" alt="브랜딩 이미지1">
-        <img src="./images/branding-2.png" alt="브랜딩 이미지2">
-        <img src="./images/branding-3.png" alt="브랜딩 이미지3">
-        <img src="./images/branding-4.png" alt="브랜딩 이미지4">
-      </div>
-      
-    </article>
+  // 지도에 마커를 생성하고 표시한다
+  const marker = new kakao.maps.Marker({
+    position: new kakao.maps.LatLng(37.2683, 127.0005), // 마커의 좌표
+    map: map // 마커를 표시할 지도 객체
+  });
+</script>
 
-    <!-- membership -->
-    <article class="membership">
-      <img src="./images/membership1.png" alt="멤버쉽이미지">
-      <div class="membership-txt">
-        <h2>membership</h2>
-        <h3>
-          Jeep Owner만이 경험할 수 있는, 익스트림한 이벤트들과 여러가지 혜택이
-          제공되는 Jeep Owner전용 멤버십 프로그램에 지금 가입하세요.
-        </h3>
-        <a href="#" class="more-btn">자세히 보기</a>
-      </div>
-    </article>
-
-    <!-- best-model -->
-    <article class="best-model">
-      <h2>best model</h2>
-      <ul class="best-model-menu">
-        <li class="btn1">wrangler</li>
-        <li class="btn2">gladiator</li>
-        <li class="btn3">grand cherokee</li>
-      </ul>
-
-      <div class="best-model-img">
-        <img src="./images/bestmodel1.png" alt="베스트 모델 이미지1">
-      </div>
-    </article>
-
-    <!-- video -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/7RHG7rmzV1o?controls=0&loop=1&autoplay=1&amp;playlist=7RHG7rmzV1o&amp;loop=0 &mute=1&modestbranding=1" 
-    title="YouTube video player"class="youtube"  frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-    <!-- jeep korea service -->
-    <article class="service">
-      <h2>jeep korea service</h2>
-
-      <ul class="service-txt">
-        <li>
-          <img src="./images/service1-1.png" alt="시승신청 이미지">
-          <h5>시승신청</h5>
-          <p>jeep의 다양한 모델들을 자유롭게 시승해보세요.</p>
-
-          <svg viewBox="0 96 960 960" class="add">
-            <path d="M450 856V606H200v-60h250V296h60v250h250v60H510v250h-60Z">
-          </svg>
-        </li>
-
-        <li>
-          <img src="./images/service2-1.png" alt="jeep life 이미지">
-          <h5>jeep life</h5>
-          <p>jeep의 다양한 이야기들을 만나보세요.</p>
-
-          <svg viewBox="0 96 960 960" class="add">
-            <path d="M450 856V606H200v-60h250V296h60v250h250v60H510v250h-60Z">
-          </svg>
-        </li>
-
-        <li>
-          <img src="./images/service3-2.png" alt="전시장 이미지">
-          <h5>전시장/서비스 센터</h5>
-          <p>전국에 있는 전시장과 서비스 센터를 찾아보세요.</p>
-
-          <svg viewBox="0 96 960 960" class="add">
-            <path d="M450 856V606H200v-60h250V296h60v250h250v60H510v250h-60Z">
-          </svg>
-        </li>
-      </ul>
-    </article>
-
-    <!-- inquiry -->
-    <article class="inquiry">
-      <div class="inquiry-txt">
-        <h2>inquiry</h2>
-        <p>궁금한 사항은 언제든 자유롭게 문의하세요.</p>
-      </div>
-
-      <div class="inquiry-form">
-        <form>
-          <section>
-            <p>이름</p>
-            <input type="username" name="userName">
-          </section>
-
-          <section>
-            <p>연락처</p>
-            <input type="tel" name="userTel">
-          </section>
-
-          <section>
-            <p>이메일</p>
-            <input type="email" name="userEmail">
-          </section>
-
-          <section>
-            <p>문의사항</p>
-            <input type="text" name="userText">
-          </section>
-
-          <button type="submit">개인정보 동의 후 전송</button>
-        </form>
-      </div>
-    </article>
-
-  
-    <!-- footer -->
-    <footer>
-      <div class="footer-txt">
-        <p>
-          ©2022 Stellantis. All Rights Reserved. 
-          <br>Chrysler, Jeep 및 FIAT 로고는
-          Stellantis의 등록 상표입니다.
-        </p>
-      </div>
-
-      <ul class="footer-icon">
-        <li>
-          <a href="https://www.instagram.com/jeep/"><img src="./images/footer1-instagram.png" alt="인스타그램"></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/JeepKorea/?locale=ko_KR"><img src="./images/footer2-facebook.png" alt="페이스북"></a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/jeepkorea"><img src="./images/footer3-youtube.png" alt="유튜브"></a>
-        </li>
-      </ul>
-    </footer>
-
-  </body>
-
-  <script>
-		const mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-		    mapOption = {
-		        center: new kakao.maps.LatLng(37.2683,127.0005), // 지도의 중심좌표
-		        level: 3, // 지도의 확대 레벨
-		        mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
-		    }; 
-
-		// 지도를 생성한다 
-		const map = new kakao.maps.Map(mapContainer, mapOption); 
-
-		// 마우스 휠과 모바일 터치를 이용한 지도 확대, 축소를 막는다
-		map.setZoomable(false);   
-
-		// 지도에 확대 축소 컨트롤을 생성한다
-		const zoomControl = new kakao.maps.ZoomControl();
-
-		// 지도의 우측에 확대 축소 컨트롤을 추가한다
-		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
-
-		// 지도에 마커를 생성하고 표시한다
-		const marker = new kakao.maps.Marker({
-		    position: new kakao.maps.LatLng(37.2683,127.0005), // 마커의 좌표
-		    map: map // 마커를 표시할 지도 객체
-		});
-	</script>
 </html>

@@ -2,7 +2,7 @@
 
 /* font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Roboto Flex', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&family=Roboto+Flex:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&family=Roboto+Flex:wght@700&display=swap');
 
 /* 변수선언 */
 @import url(./variable.css);
@@ -12,15 +12,16 @@ font-family: 'Roboto Flex', sans-serif; */
 
 /***** header *****/
 header {
-  height: 5em;
+  height: 4em;
   width: 100%;
   position: fixed;
   background-color: #111111;
   z-index: 99999;
+  transition: 0.3s;
 }
 
 header .header-wrapper {
-  height: 5em;
+  height: 4em;
   display: flex;
   justify-content: space-between;
   width: 96%;
@@ -44,6 +45,7 @@ header .global-nav {
 header .global-nav li {
   width: 20%;
   transition: 0.3s;
+  cursor: pointer;
 }
 header .global-utill {
   display: flex;
@@ -54,6 +56,7 @@ header .global-utill {
 
 header .global-utill li {
   margin-left: 3rem;
+  cursor: pointer;
 }
 
 header .global-nav li:hover {
@@ -229,7 +232,6 @@ header .global-nav li:hover {
   margin-top: 2rem;
 }
 
-
 /***** best-model *****/
 .best-model {
   text-align: center;
@@ -276,9 +278,8 @@ header .global-nav li:hover {
   min-width: 700px;
   margin: 0 auto;
   margin-top: 5rem;
-
 }
-.best-model .best-model-img img{
+.best-model .best-model-img img {
   width: 50vw;
   min-width: 600px;
 }
@@ -338,7 +339,6 @@ iframe {
   position: relative;
   bottom: 63%;
 }
-
 
 /***** inquiry *****/
 .inquiry {

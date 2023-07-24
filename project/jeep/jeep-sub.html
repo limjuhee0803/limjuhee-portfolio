@@ -202,20 +202,21 @@
       <h1>problem & solution</h1>
       <ul class="problem-info">
         <li class="main-problem">
-          1. 메인 배너의 도넛 이미지가 <span>디스플레이의 사이즈에 따라 위치 변화</span>
+          1. header영역의 높이가 높아 <span>페이지를 너무 가림</span>
           <ul class="solution">
-            <li>- 기존의 % 값이었던 메인 배너의 높이 값을 고정 값을 px로 수정하여 높이 값 고정</li>
-            <li>- 기타 margin이나 padding 값 또한 고정값으로 수정한 뒤, overflow:hidden; 적용</li>
+            <li>- header영역의 높이를 약간 수정하였지만, 더욱 효과적인 방법이 필요</li>
+            <li>- if문을 활용하여 스크롤을 내리면 header영역이 올라가고, 스크롤을 올리면 header영역이 내려오게 수정</li>
           </ul>
         </li>
 
 
         <li class="main-problem">
-          2.공식 이미지 자료 부족으로 인한
-          <span>디자인의 어려움</span>
+          2. html을 validator 검사 시
+          <span>이유를 알 수 없는 오류가 뜸</span>
           <ul class="solution">
-            <li>- 공식 한국 사이트 외에도 해외의 공식 사이트들을 찾아 이미지를 적용</li>
-            <li>- 유사한 스타일의 도넛 이미지를 수정하여 이미지 적용</li>
+            <li>- 영역을 나누기 위하여 div와 section 태그를 많이 활용</li>
+            <li>- div안에는 section이 가능하지만 section안에는 div사용이 불가능하다는 것을 알게됨</li>
+            <li>- 태그를 수정하자 오류가 정상적으로 사라짐</li>
           </ul>
         </li>
       </ul>
@@ -260,7 +261,7 @@
       <h3><a href="https://limjuhee0803.github.io/limjuhee-portfolio/project/jeep/jeep.html" target="_blank">Jeep
           사이트 보러가기</a></h3>
 
-      <p>© 2022 Design & Published By Lim Ju Hee. All Rights Reserved.</p>
+      <p>© 2023 Design & Published By Lim Ju Hee. All Rights Reserved.</p>
     </div>
 
   </footer>
