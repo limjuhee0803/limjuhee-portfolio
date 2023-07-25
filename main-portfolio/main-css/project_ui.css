@@ -187,7 +187,7 @@ button:focus {
 .info .text {
   position: relative;
   bottom: -110px;
-  font-size: 2.2rem;
+  font-size: 2rem;
   white-space: nowrap;
   color: #0d1f3d;
   width: fit-content;
