@@ -34,7 +34,7 @@ $('.pub-info li')
   .eq(3)
   .on('click', function () {
     $('.pub-detail').text(
-      'Git을 이용하여 서로의 작업물을 직접 확인 밒 수정하며 작업'
+      'Git을 이용하여 서로의 작업물을 직접 확인 및 수정하며 작업'
     );
   });
 

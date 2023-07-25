@@ -92,7 +92,7 @@
 
 /* product */
 .menu--wrapper {
-  animation: product_moving 15s linear infinite;
+  animation: product_moving 40s linear infinite;
 }
 
 @keyframes product_moving {
