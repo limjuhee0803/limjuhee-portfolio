@@ -519,12 +519,12 @@ header .gnb {
 }
 
 .web .color {
-  margin-top: 50px;
-  margin-left: 10%;
   border-bottom: #ddd 2px solid;
   padding-bottom: 50px;
 }
-
+.web .color h1 {
+  margin-left: 10%;
+}
 .web .color .color-detail .color-info {
   display: flex;
   justify-content: center;
@@ -541,12 +541,17 @@ header .gnb {
   color: #fff;
 }
 
-.web .color .color-detail .color-info li:nth-child(2) {
+.web .color .color-detail .color-info li:nth-child(1) {
+  background-color: #688fe3;
+  color: var(--blue-color);
+}
+
+.web .color .color-detail .color-info li:nth-child(3) {
   background-color: var(--yellow-color);
   color: #fff;
 }
 
-.web .color .color-detail .color-info li:nth-child(3) {
+.web .color .color-detail .color-info li:nth-child(4) {
   background-color: #fff;
   border: 2px solid #ddd;
 }
