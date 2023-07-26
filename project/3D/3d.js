@@ -1,4 +1,4 @@
-/* 마우스 휠 이벤트 */
+/* 마우스 휠 이벤트-풀페이지 */
 
 $('.full-page').each(function () {
   $(this).on('wheel', function (evt) {
