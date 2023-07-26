@@ -453,8 +453,6 @@ footer .flow-text {
   font-weight: bold;
   background-color: #1f1f1f;
   height: 70px;
-  border-top: 3px solid var(--orange-color);
-  border-bottom: 3px solid var(--orange-color);
   position: absolute;
   top: 0;
 }
@@ -483,7 +481,7 @@ footer .flow-text {
   object-fit: contain;
 }
 
-@keyframes textLoop {
+@keyframes textLoop1 {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
