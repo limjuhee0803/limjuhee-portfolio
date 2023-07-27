@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /***** header *****/
 header {
   position: fixed;
@@ -111,6 +110,7 @@ header .hambuger.change-hambuger {
   gap: 50px;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 
 .main-lf img {
@@ -237,9 +237,6 @@ header .hambuger.change-hambuger {
   text-transform: capitalize;
   display: none;
 }
-.main-rt .info .product-info.active-info {
-  display: block;
-}
 
 .main-rt .color {
   display: flex;
@@ -260,6 +257,8 @@ header .hambuger.change-hambuger {
 .main-flow {
   position: absolute;
   bottom: 0;
+  width: 100vw;
+  overflow: hidden;
 }
 .flow-text {
   display: flex;

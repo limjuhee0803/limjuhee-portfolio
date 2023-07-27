@@ -70,7 +70,13 @@ $('.up').on('click', () => {
 });
 
 //product 슬라이드
+/*
 $('.product').on('click', () => {
   $('.product svg').toggleClass('active-product');
   $('.product-info').toggleClass('active-info');
+});
+*/
+$('.product').on('click', () => {
+  $('.product svg').toggleClass('active-product');
+  $('.product-info').slideToggle();
 });
