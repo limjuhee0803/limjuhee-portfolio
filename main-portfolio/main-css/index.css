@@ -98,7 +98,7 @@ header .gnb span {
 
 .web-design .web .web-list li:hover {
   background-color: rgba(33, 33, 71, 0.9);
-  transform: translateX(20px);
+  transform: translateX(30px);
   color: #fff;
 }
 
@@ -149,6 +149,7 @@ header .gnb span {
 .web-design .web-img {
   width: 60vw;
   margin-right: 5vw;
+  margin-top: 7dvb;
 }
 .web-design .web-img img {
   min-width: 700px;
