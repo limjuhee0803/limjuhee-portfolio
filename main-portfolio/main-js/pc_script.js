@@ -54,6 +54,13 @@ $('.back_top').on('click', () => {
   });
 });
 
+$('.top').on('click', () => {
+  scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
+
 //back to top
 $(window).on('scroll', (e) => {
   let pos = $(e.target).scrollTop();
