@@ -28,6 +28,7 @@ header h1 {
 }
 
 header .gnb {
+  font-size: 1rem;
   margin: 0 3rem;
   display: flex;
   justify-content: right;
