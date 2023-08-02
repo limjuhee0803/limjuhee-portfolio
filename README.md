@@ -1,6 +1,6 @@
 # 💙Portfolio 제작일지💙
 
-<img src="./main-portfolio/main-images/portfolio.png" width="450px" height="300px" title="300px" alt="portfolio image"></img>
+<img src="./main-portfolio/main-images/portfolio.png" alt="portfolio image"></img>
 
 ## ❤️메인 페이지 디자인❤️
 
