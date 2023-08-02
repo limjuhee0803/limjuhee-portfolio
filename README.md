@@ -2,7 +2,7 @@
 
 ![portfolio](https://github.com/limjuhee0803/limjuhee-portfolio/assets/127369461/a6ca685b-0026-41b1-8482-c9d46bddb6a7)
 
-- 사용기술 <img src="https://img.shields.io/badge/html5-#E34F26?style=for-the-badge&logo=html5&logoColor=white">
+- 사용기술 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 - 작업 기간 - 2023년 6월 22일 ~ 2023년 8월 2일
 - 작업 유형 - 개인프로젝트(포트폴리오)
 
