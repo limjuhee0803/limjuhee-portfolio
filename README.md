@@ -1,7 +1,5 @@
 # 💙Portfolio 제작일지💙
 
-<img src="./main-portfolio/main-images/portfolio.png" alt="portfolio image"></img>
-
 ## ❤️메인 페이지 디자인❤️
 
 - 메인 페이지 디자인은 평소 좋아하던 파란색과 데이지꽃을 조합하여 디자인
