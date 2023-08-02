@@ -39,7 +39,7 @@
 - @keyframe을 이용한 애니메이션
 - 클릭 시 해당 위치로 스크롤 이동하는 onClick 이벤트
 
-#### **Main Projectn**
+#### **Main Project**
 
 - 많은 프로젝트를 효율적으로 정리하기 위해 hover시, 프로젝트 대표 이미지 노출
 - attr을 이용한 이미지 변경 이벤트
