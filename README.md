@@ -80,7 +80,7 @@
 
 ## 💛Problem & Solution💛
 
-- **Backgound 이미지를 직접 제작한 이미지 파일을 넣다보니 업로딩이 느려짐**
+- **Background 이미지를 직접 제작한 이미지 파일을 넣다보니 업로딩이 느려짐**
 
   - 이미지를 svg로 변환하는 사이트에서 svg로 변환하여 Background에 적용
 
