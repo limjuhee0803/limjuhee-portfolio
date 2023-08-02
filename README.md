@@ -73,6 +73,8 @@
 - 포트폴리오에 들어갈 작업물을 크게 publishing/ web & appp /3D modeling으로 레이아웃을 나눔
 - 성격의 키워드를 flow text로 연출하여 시각적 재미요소 부여
 
+<br>
+
 ## 🧡Publishing🧡
 
 - @keyframe을 활용한 애니메이션 제어
@@ -81,6 +83,8 @@
 - 중복 if문을 활용한 fullpage연출
 - 마우스 좌표를 이용한 이벤트
 - addClass를 활용한 다양한 효과
+
+<br>
 
 ## 💛Problem & Solution💛
 
