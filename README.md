@@ -5,6 +5,7 @@
 - 사용기술
   <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
 - 작업 기간 - 2023년 6월 22일 ~ 2023년 8월 2일
 - 작업 유형 - 개인프로젝트(포트폴리오)
 
