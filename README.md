@@ -25,6 +25,8 @@
 
 ### 2.디렉토리 구조
 
+![A4 - 2](https://github.com/limjuhee0803/limjuhee-portfolio/assets/127369461/a111efa6-2455-436d-94d7-18550e1b50c3)
+
 ### 3.사용 기술
 
 ### 4.페이지 구성
