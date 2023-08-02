@@ -27,9 +27,17 @@
 
 ![A4 - 2](https://github.com/limjuhee0803/limjuhee-portfolio/assets/127369461/413d96dd-67cf-48e1-8df8-8ee10addbd99)
 
-### 3.사용 기술
+### 3.페이지 구성
 
-### 4.페이지 구성
+#### **All**
+
+##### 이중 if문을 활용한 풀페이지 구성
+
+#### **Header . Navigation **
+
+- 상단 고정 내비게이션
+- @keyframe을 이용한 애니메이션
+- 클릭 시 해당 위치로 스크롤 이동하는 onClick 이벤트
 
 ## ❤️메인 페이지 디자인❤️
 
