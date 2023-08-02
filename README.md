@@ -33,7 +33,7 @@
 
 ##### 이중 if문을 활용한 풀페이지 구성
 
-#### **Header / Navigation **
+#### **Header / Navigation**
 
 - 상단 고정 내비게이션
 - @keyframe을 이용한 애니메이션
