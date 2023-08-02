@@ -76,6 +76,7 @@ header .name-gnb {
 header .name-gnb a {
   height: 30px;
   line-height: 30px;
+  display: flex;
 }
 header .name-gnb a svg {
   fill: #fff;
